@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educambio - Panel de Usuario</title>
+</head>
+
+<body class="bg-fixed bg-cover" style="background-image: url(images/background-1.png)">
+
+    <header class="bg-[#003366] h-20 w-full relative">
+        <div class="flex justify-between">
+            <div>
+                <h1 class="text-white text-3xl tracking-[10px] font-bold pt-5 pl-10 uppercase">Educambio</h1>
+            </div>
+             
+            <div class="pt-5 pr-10 relative flex items-center">
+                <div class="mr-2" id="userIcon">
+                    <img class="h-10 w-10 rounded-full bg-white" src="images\user_icon.png">
+                            
+                    <div id="userMenu" class="bg-white rounded-2xl p-4 text-clip opacity-0 absolute top-full right-0 mt-2 w-36 z-10 hidden">
+                        <a href="perfil.html">Perfil</a>
+                        <p>Cerrar sesión</p>
+                    </div>
+                </div>
+    
+                <div>
+                    <p class="text-white">Usuario</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+
+    <nav>
+        <div class="bg-[#071320] fixed min-h-full w-28 group hover:w-60 transition-all duration-150">
+            <div class="flex-row justify-center">
+                
+                <div class="flex pt-10">   
+                    <img src="images/icon _home_.png" class="pl-6 w-18">
+                    <p class="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Inicio</p>
+                </div>
+
+                <div class="flex pt-10">
+                    <img src="images/icon _Edit.png" class="pl-8">
+                    <p class="text-white pl-4 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-75 delay-[45ms] whitespace-nowrap">Crear clase</p>
+                </div>
+
+                <div class="flex pt-10">
+                    <img src="images/icon_comment.png" class="pl-8 w-18">
+                    <p class="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Soporte</p>
+                </div>
+
+                <div class="flex pt-10">
+                    <img src="images/icon _calendar.png" class="pl-8 w-18">
+                    <p class="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Calendario</p>
+                </div>
+
+            </div> 
+        </div>    
+    </nav>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="menu.js"></script>
+
+</body>
+</html>
