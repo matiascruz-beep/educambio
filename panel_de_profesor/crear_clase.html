@@ -12,30 +12,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     
 </head>
+
 <body>
-    <main>
-        <div class="crearclase">
-            <h1>CREAR CLASE</h1>
-            <form action="submit">
-                <div class="form-group"><label for="">Título: </label>
-                    <input type="text" placeholder="Matemática" name="" id="" required>
+    <main >
+        <div class="crearclase mx-auto mt-5 bg-blue-400 bg-opacity-50 w-[950px] h-[600px] rounded-[6rem] text-center p-10">
+            <h1 class="font-akaya font-bold text-white text-5xl mb-10">CREAR CLASE</h1>
+            <form action="submit" class="flex flex-col items-center text-white">
+                <div class="form-group flex items-center mb-3">
+                    <label for="" class="mr-4">Título: </label>
+                    <input type="text" placeholder="Matemática" name="" id="" class="border border-gray-300 rounded-full h-12 w-full pl-4 focus:outline-none focus:ring-2 focus:ring-blue-500 text-black w-[400px]" required>
                 </div>
-                <div class="form-group"><label for="fecha">Fecha: </label>
-                    <input type="text" placeholder="dd/mm/aaaa" name="fecha" id="fecha" required>
+                <div class="form-group flex items-center mb-3">
+                    <label for="fecha" class="mr-4">Fecha: </label>
+                    <input type="text" placeholder="dd/mm/aaaa" name="fecha" id="fecha" class="text-black border border-gray-300 rounded-full h-12 w-full pl-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[400px]" required>
                 </div>
-                <div class="form-group"> <label for="">Hora: </label>
-                    <input type="time" placeholder="18 hs a 19hs" name="" id="" required>
+                <div class="form-group flex items-center mb-3">
+                    <label for="" class="mr-4">Hora:</label>
+                    <input type="time" name="" id="" class="text-black border border-gray-300 rounded-full h-12 w-full pl-4 pr-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[400px]" required>
                 </div>
-                <div class="form-group"><label for="">Tema: </label>
-                    <input type="text" placeholder="Función Lineal" name="" id="" required>
+                <div class="form-group flex items-center mb-3">
+                    <label for="" class="mr-4">Tema: </label>
+                    <input type="text" placeholder="Función Lineal" name="" id="" class="text-black border border-gray-300 rounded-full h-12 w-full pl-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[400px]" required>
                 </div>
-                <div class="form-group"><label for="">Profe: </label>
-                <input type="text" placeholder="Fulanito de tal" name="" id="" required>
+                <div class="form-group flex items-center mb-3">
+                    <label for="" class="mr-4">Profe: </label>
+                    <input type="text" placeholder="Fulanito de tal" name="" id="" class="text-black border border-gray-300 rounded-full h-12 w-full pl-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[400px]" required>
                 </div>
-                <div class="form-group"><label for="">Meet: </label>
-                    <input type="text" placeholder="https://meet.google.com/mho-swwp-pmz" name="" id="" required>
+                <div class="form-group flex items-center mb-3">
+                    <label for="" class="mr-4">Meet: </label>
+                    <input type="text" placeholder="https://meet.google.com/mho-swwp-pmz" name="" id="" class="text-black border border-gray-300 rounded-full h-12 w-full pl-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[400px]" required>
                 </div>
-                <input type="submit" value="Crear">
+                <input type="submit" value="Crear" class="bg-green-600 text-white h-12 w-52 rounded-full cursor-pointer hover:bg-green-700">
             </form>
         </div>
     </main>
