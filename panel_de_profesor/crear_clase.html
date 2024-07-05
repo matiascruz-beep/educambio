@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+</head>
+<body>
+    <main>
+        <div class="crearclase">
+            <h1>CREAR CLASE</h1>
+            <form action="submit">
+                <div class="form-group"><label for="">Título: </label>
+                    <input type="text" placeholder="Matemática" name="" id="" required>
+                </div>
+                <div class="form-group"><label for="fecha">Fecha: </label>
+                    <input type="text" placeholder="dd/mm/aaaa" name="fecha" id="fecha" required>
+                </div>
+                <div class="form-group"> <label for="">Hora: </label>
+                    <input type="time" placeholder="18 hs a 19hs" name="" id="" required>
+                </div>
+                <div class="form-group"><label for="">Tema: </label>
+                    <input type="text" placeholder="Función Lineal" name="" id="" required>
+                </div>
+                <div class="form-group"><label for="">Profe: </label>
+                <input type="text" placeholder="Fulanito de tal" name="" id="" required>
+                </div>
+                <div class="form-group"><label for="">Meet: </label>
+                    <input type="text" placeholder="https://meet.google.com/mho-swwp-pmz" name="" id="" required>
+                </div>
+                <input type="submit" value="Crear">
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    flatpickr("#fecha", {
+        dateFormat: "d/m/Y",
+        locale: {
+            firstDayOfWeek: 1 // Comienza la semana en lunes
+        }
+    });
+});
+    </script>
+</body>
+</html>
