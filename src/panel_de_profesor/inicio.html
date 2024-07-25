@@ -3,14 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <div class="crearclase mx-auto mt-16 bg-blue-400 bg-opacity-50 w-[950px] h-[600px] rounded-[6rem] text-center p-10">
-            <h1>Codea aca jeje x1</h1>
+    <main class="mx-auto">
+        <div class="main flex-1 pr-10 pl-10">
+            <div class="mx-auto msj-bienvenida w-[900px] h-[265px] bg-custom-bg rounded-[30px] my-12 flex text-center items-center justify-center shadow-[10px_10px_20px_rgba(0,0,0,0.5)]">
+                    <div class="">
+                    <h1 class="text-white m-2.5 font-poppins text-3xl font-bold">¡Hola! Bienvenida Rosa Melano</h1>
+                    <p class="text-white m-2.5 text-left leading-5 font-poppins">En este apartado podrás ver las clases que tienes creadas, <br>¡empecemos a enseñar!</p>
+                    </div>
+                    <div class="robotito">
+                    <img src="./assets/img/Robotito.png" alt="">
+                    </div>
+            </div>
+
+            <table id="clasesTabla" class="mt-16 w-full overflow-hidden text-white font-poppins border-separate border-spacing-y-4">
+            <thead class="bg-custom-blue ">
+                <tr>
+                    <th class="text-center px-2.5 h-[95px] uppercase rounded-tl-[20px] rounded-bl-[20px]">Materia</th>
+                    <th class="text-center px-2.5 h-[95px] uppercase">Contenido</th>
+                    <th class="text-center px-2.5 h-[95px] uppercase">Fecha</th>
+                    <th class="text-center px-2.5 h-[95px] uppercase">Horario</th>
+                    <th class="text-center px-2.5 h-[95px] uppercase">Duración</th>
+                    <th class="text-center px-2.5 h-[95px] uppercase">Estudiantes</th>
+                    <th class="text-center px-2.5 h-[95px] uppercase rounded-tr-[20px] rounded-br-[20px]">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <div class="tabla"> 
         </div>
-        <!-- Codear aca -->
+    </div>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
