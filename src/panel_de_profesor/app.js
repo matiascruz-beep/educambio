@@ -5,16 +5,15 @@ links.forEach((link)=>{
     link.addEventListener("click",(e)=>{
         e.preventDefault();
         let id = link.id
-        /*location.hash = link.id*/
         let archivo = id + ".html"
-        history.pushState(null,"",id)
-        /*console.log("ubicacion " + location.hash)*/
         let xhr = ajax(archivo) 
         xhr.addEventListener("load",()=>{
-            if(xhr.status == 200){
+            if(xhr.status == 200){  
                 main.innerHTML = xhr.response
+                history.pushState({
+                    template : xhr.response
+                },"",id)
             }
-
         })
         
     })
@@ -22,15 +21,18 @@ links.forEach((link)=>{
 
 function ajax(url,metodo){
     let http_metodo = metodo || "GET"
-    let xhr = new XMLHttpRequest
+    let xhr = new XMLHttpRequest();
     xhr.open(http_metodo,url)
     xhr.send()
     return xhr
 }
 
 
-window.addEventListener("popstate" , () => {
-    let archivo  = location.pathname.split("/")[2]+".html"
+window.addEventListener("popstate" , (e) => {
+    if(e.state.template){
+        main.innerHTML = e.state.template
+    }else{
+        let archivo  = location.pathname.split("/")[2]+".html"
     console.log("la url es " + archivo)
     let xhr = ajax(archivo) 
         xhr.addEventListener("load",()=>{
@@ -39,7 +41,21 @@ window.addEventListener("popstate" , () => {
             }
 
         })
+    }
+    
 })
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*window.addEventListener("hashchange", () => {
