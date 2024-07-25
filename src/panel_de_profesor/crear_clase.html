@@ -1,59 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
 </head>
 <body>
-    <main >
-        <div class="crearclase mx-auto mt-16 bg-blue-400 bg-opacity-50 w-[950px] h-[600px] rounded-[6rem] text-center p-10">
-            <h1 class="font-akaya font-bold text-white text-5xl mb-10">CREAR CLASE</h1>
-            <form action="submit" class="flex flex-col items-center text-white">
-                <div class="form-group flex items-center mb-3">
-                    <label for="" class="mr-4">Título: </label>
-                    <input type="text" placeholder="Matemática" name="" id="" class="border border-gray-300 rounded-full h-12 w-full pl-4 focus:outline-none focus:ring-2 focus:ring-blue-500 text-black w-[550px]" required>
-                </div>
-                <div class="form-group flex items-center mb-3">
-                    <label for="fecha" class="mr-4">Fecha: </label>
-                    <input type="text" placeholder="dd/mm/aaaa" name="fecha" id="fecha" class="text-black border border-gray-300 rounded-full h-12 w-full pl-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[550px]" required>
-                </div>
-                <div class="form-group flex items-center mb-3">
-                    <label for="" class="mr-4">Hora:</label>
-                    <input type="time" name="" id="" class="text-black border border-gray-300 rounded-full h-12 w-full pl-4 pr-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[550px]" required>
-                </div>
-                <div class="form-group flex items-center mb-3">
-                    <label for="" class="mr-4">Tema: </label>
-                    <input type="text" placeholder="Función Lineal" name="" id="" class="text-black border border-gray-300 rounded-full h-12 w-full pl-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[550px]" required>
-                </div>
-                <div class="form-group flex items-center mb-3">
-                    <label for="" class="mr-4">Profe: </label>
-                    <input type="text" placeholder="Fulanito de tal" name="" id="" class="text-black border border-gray-300 rounded-full h-12 w-full pl-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[550px]" required>
-                </div>
-                <div class="form-group flex items-center mb-3">
-                    <label for="" class="mr-4">Meet: </label>
-                    <input type="text" placeholder="https://meet.google.com/mho-swwp-pmz" name="" id="" class="text-black border border-gray-300 rounded-full h-12 w-full pl-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-[550px]" required>
-                </div>
-                <input type="submit" value="Crear" class="bg-green-600 text-white h-12 w-52 rounded-full cursor-pointer hover:bg-green-700">
+    <main>
+        <div class="form text-white flex flex-col">
+            <form id="crearClaseForm">
+                <label for="materia">Materia:</label>
+                <input type="text" id="materia" name="materia" required>
+    
+                <label for="contenido">Contenido:</label>
+                <input type="text" id="contenido" name="contenido" required>
+    
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+    
+                <label for="horario">Horario:</label>
+                <input type="time" id="horario" name="horario" required>
+    
+                <label for="duracion">Duración:</label>
+                <input type="text" id="duracion" name="duracion" required>
+    
+                <label for="meet">Meet:</label>
+                <input type="text" id="meet" name="meet" required>
+    
+                <button type="button" id="crear">Crear Clase</button>
             </form>
         </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    flatpickr("#fecha", {
-        dateFormat: "d/m/Y",
-        locale: {
-            firstDayOfWeek: 1 // Comienza la semana en lunes
-        }
-    });
-});
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
