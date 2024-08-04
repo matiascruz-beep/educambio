@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -11,8 +11,7 @@
             <h1 class="font-semibold text-3xl tracking-widest">EDU<span class="text-blue-400">CAMBIO</span></h1>
             <div class="pt-0 pr-10 relative flex items-center">
                 <div class="mr-2" id="userIcon">
-                    <img class="h-10 w-10 rounded-full bg-white object-cover" src="./assets/img/student3.jpg"  >
-                            
+                    <img class="h-10 w-10 rounded-full bg-white object-cover" src="./assets/img/student3.jpg"  >        
                     <div id="userMenu" class="bg-white rounded-2xl p-4 text-clip opacity-0 absolute top-full right-0 mt-2 w-36 z-10 hidden">
                         <p class="text-black">Perfil</p>
                         <p class="text-black">Cerrar sesión</p>
@@ -23,13 +22,12 @@
                 </div>
             </div>
         </header>
-        
             <div class="main-content flex bg-custom-gradient">
                 <div class="nav w-[150px] transition-all duration-150 hover:w-[300px]  min-h-screen bg-custom-gradient text-white p-5 font-poppins group">
                     <div class="profile flex flex-col items-center transition-all duration-500">
                         <img src="./assets/img/student3.jpg" alt="Profile Picture" class="profile-pic  rounded-full object-cover w-[100px] h-[100px]">
                         <div class="nombre-student ml-2.5 opacity-0 transition-opacity duration-500 whitespace-nowrap group-hover:opacity-100 p-5">
-                        <h2 class="text-center font-poppins text-2xl font-bold p-2">Rosa Melano</h2>
+                        <h2 class="text-center font-poppins text-2xl font-bold p-2">Rosa Perez</h2>
                         <p class="text-center font-poppins">Profesora</p>
                         </div>
                         
@@ -63,10 +61,6 @@
              <!--contenido main -->
         </div>
     </div>
-    
-
-
-        
 <!-- Modal de confirmación -->
 <div class="modal hidden fixed top-0 left-0 w-full h-full bg-modalbg z-50" id="confirmModal">
     <div class="modal-content bg-white w-[600px] h-[300px] rounded-3xl text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 content-center">
@@ -76,8 +70,9 @@
         <button id="cancelButton" class="mx-1 px-2 font-poppins bg-boton-iniciar w-[120px] h-[50px] text-white rounded-3xl">Cancelar</button>
     </div>
 </div>  
-
+    <script src="menu.js"></script>
     <script src="app2.js"></script>
     <script src="app.js"></script>
+    
 </body>
 </html>
