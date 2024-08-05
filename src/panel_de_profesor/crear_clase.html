@@ -7,29 +7,41 @@
 </head>
 <body>
     <main>
-        <div class="form flex flex-col">
-            <form id="crearClaseForm">
-                <label class="text-white" for="materia">Materia:</label>
-                <input class="text-black" type="text" id="materia" name="materia" required>
-    
-                <label class="text-white" for="contenido">Contenido:</label>
-                <input class="text-black" type="text" id="contenido" name="contenido" required>
-    
-                <label class="text-white" for="fecha">Fecha:</label>
-                <input class="text-black" type="date" id="fecha" name="fecha" required>
-    
-                <label class="text-white" for="horario">Horario:</label>
-                <input class="text-black" type="time" id="horario" name="horario" required>
-    
-                <label class="text-white" for="duracion">Duración:</label>
-                <input  class="text-black"type="text" id="duracion" name="duracion" required>
-    
-                <label class="text-white" for="meet">Meet:</label>
-                <input class="text-black" type="text" id="meet" name="meet" required>
-    
-                <button class="text-white" type="submit" id="crear">Crear Clase</button>
-            </form>
+        <div class="w-[950px] h-[680px] rounded-[100px] bg-custom-focus mt-14 mx-auto font-poppins p-5" >
+            <div class="flex justify-center">
+                <h1 class="text-white text-[50px]">CREAR CLASE</h1>
+            </div>
+                <form class="form items-center flex flex-col" id="crearClaseForm">
+                    <div class="flex flex-col mt-4">
+                        <label class="text-white" for="materia">Materia:</label>
+                        <input class="text-black w-[500px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="materia" name="materia" required>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label class="text-white" for="contenido">Contenido:</label>
+                        <input class="text-black w-[500px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="contenido" name="contenido" required>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label class="text-white" for="fecha">Fecha:</label>
+                        <input class="text-black w-[500px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label class="text-white" for="horario">Horario:</label>
+                        <input class="text-black w-[500px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="time" id="horario" name="horario" required>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label class="text-white" for="duracion">Duración:</label>
+                        <input  class="text-black w-[500px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none"type="text" id="duracion" name="duracion" required>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                    <label class="text-white" for="meet">Meet:</label>
+                    <input class="text-black w-[500px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="meet" name="meet" required>
+                    </div>
+                    <div class="flex justify-center w-[500px] h-[40px] rounded-3xl bg-[#0082D6] mt-5">
+                        <button class="text-white w-[500px] h-[40px]" type="submit" id="crear">Crear Clase</button>
+                    </div>
+                </form>
         </div>
     </main>
-    <script src="app.js"></script>
+        <script src="app.js"></script>
+</body>
 </html>

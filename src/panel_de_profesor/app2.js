@@ -70,11 +70,11 @@ function initPageJS(page) {
             cell4.innerText = clase.horario;
             cell5.innerText = clase.duracion;
             cell6.innerHTML = `<div class="flex justify-center">
-            <img src="../assets/img/student1.jpg" alt="Student" class="w-10 h-10 rounded-full">
-                <img src="../assets/img/student2.webp" alt="Student" class="w-10 h-10 rounded-full">
-                <img src="../assets/img/student3.jpg" alt="Student" class="w-10 h-10 rounded-full">
-                <img src="../assets/img/student4.webp" alt="Student" class="w-10 h-10 rounded-full">
-                <img src="../assets/img/student5.jpg" alt="Student" class="w-10 h-10 rounded-full">
+            <img src="./assets/img/student1.jpg" alt="Student" class="w-10 h-10 rounded-full">
+                <img src="./assets/img/student2.webp" alt="Student" class="w-10 h-10 rounded-full">
+                <img src="./assets/img/student3.jpg" alt="Student" class="w-10 h-10 rounded-full">
+                <img src="./assets/img/student4.webp" alt="Student" class="w-10 h-10 rounded-full">
+                <img src="./assets/img/student5.jpg" alt="Student" class="w-10 h-10 rounded-full">
             </div>
                 `;
             cell7.innerHTML = `
@@ -83,7 +83,7 @@ function initPageJS(page) {
                         <a href="${clase.meet}" target="_blank" class="link-estilo">Iniciar</a>
                     </button>
                     <button class="delete bg-boton-borrar text-white px-4 py-2 rounded-full w-[120px]" data-index="${index}">Borrar</button>
-                    <button class="edit text-white px-4 py-2 rounded-full"><img src="../assets/icons/class_edit.png" alt=""></button>
+                    <button class="edit text-white px-4 py-2 rounded-full"><img src="./assets/icons/class_edit.png" alt=""></button>
                 </div>
             `;
 

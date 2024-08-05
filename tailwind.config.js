@@ -9,7 +9,8 @@ module.exports = {
         'trfondo' :'rgba(255, 255, 255, 0.2)', //fundo de la fila creada de la clase
         'boton-iniciar':'#0082D6',
         'boton-borrar':'#FF4C4C',
-        'modalbg':'rgba(0, 0, 0, 0.5)'
+        'modalbg':'rgba(0, 0, 0, 0.5)',
+        'custom-blue2': '#56AEFF'
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
@@ -25,6 +26,9 @@ module.exports = {
       },
       translate: {
         '-1/2': '-50%',
+      },
+      backgroundColor: {
+        'custom-focus': 'rgba(0, 99, 199, 0.5)', // Define el color con opacidad al 50%
       },
     },
   },
