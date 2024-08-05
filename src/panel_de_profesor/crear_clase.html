@@ -1,36 +1,35 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
 </head>
 <body>
     <main>
-        <div class="form text-white flex flex-col">
+        <div class="form flex flex-col">
             <form id="crearClaseForm">
-                <label for="materia">Materia:</label>
-                <input type="text" id="materia" name="materia" required>
+                <label class="text-white" for="materia">Materia:</label>
+                <input class="text-black" type="text" id="materia" name="materia" required>
     
-                <label for="contenido">Contenido:</label>
-                <input type="text" id="contenido" name="contenido" required>
+                <label class="text-white" for="contenido">Contenido:</label>
+                <input class="text-black" type="text" id="contenido" name="contenido" required>
     
-                <label for="fecha">Fecha:</label>
-                <input type="date" id="fecha" name="fecha" required>
+                <label class="text-white" for="fecha">Fecha:</label>
+                <input class="text-black" type="date" id="fecha" name="fecha" required>
     
-                <label for="horario">Horario:</label>
-                <input type="time" id="horario" name="horario" required>
+                <label class="text-white" for="horario">Horario:</label>
+                <input class="text-black" type="time" id="horario" name="horario" required>
     
-                <label for="duracion">Duración:</label>
-                <input type="text" id="duracion" name="duracion" required>
+                <label class="text-white" for="duracion">Duración:</label>
+                <input  class="text-black"type="text" id="duracion" name="duracion" required>
     
-                <label for="meet">Meet:</label>
-                <input type="text" id="meet" name="meet" required>
+                <label class="text-white" for="meet">Meet:</label>
+                <input class="text-black" type="text" id="meet" name="meet" required>
     
-                <button type="button" id="crear">Crear Clase</button>
+                <button class="text-white" type="submit" id="crear">Crear Clase</button>
             </form>
         </div>
     </main>
     <script src="app.js"></script>
-</body>
 </html>
