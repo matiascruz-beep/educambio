@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function initAppJS() {
-    let links = document.querySelectorAll("nav a");
+    let links = document.querySelectorAll("a");
     let main = document.querySelector("main");
 
     links.forEach((link) => {
