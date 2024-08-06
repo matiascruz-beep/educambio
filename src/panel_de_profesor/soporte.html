@@ -7,7 +7,7 @@
 </head>
 <body>
   <main>
-    <div class="crearclase mx-auto mt-16 bg-blue-400 bg-opacity-50 w-[950px] h-[600px] rounded-[6rem] text-center p-10 flex items-center justify-center">
+    <div class="crearclase mx-auto mt-16 bg-blue-400 bg-opacity-50 w-[950px] h-[600px] rounded-[6rem] text-center p-10 flex items-center justify-center shadow-[30px_30px_30px_rgba(0,0,0,0.5)]">
       <form class="w-full px-4">
           <div class="mb-4 flex flex-row pb-6">
               <label for="subject" class="text-white p-4 text-xl">Asunto</label>
@@ -17,8 +17,10 @@
               <label for="message" class="text-white text-xl p-4">Mensaje</label>
               <textarea id="message" class="mt-2 p-2 w-full border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" rows="5" placeholder="Hola, quería preguntar sobre la extención de cupos..."></textarea>
           </div>
-          <button type="submit" class="text-white text-lg mt-16 py-4 px-6 bg-boton-iniciar rounded-lg">Enviar</button>
-      </form>
+          <div class="flex items-center justify-center">
+            <button type="submit" class="text-white text-lg mt-16 py-4 px-6 bg-boton-iniciar  w-[200px] h-[40px] rounded-3xl flex justify-center items-center">Enviar</button>
+          </div>
+      </form> 
   </div>
   </main>
 </body>
