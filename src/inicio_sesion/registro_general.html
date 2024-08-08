@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/69c00dc57a.js" crossorigin="anonymous"></script>
+
+    <title>Registro de usuario</title>
+
+</head>
+<body class="mx-auto font-sans">
+    <nav class="bg-gradient-to-r from-[#56AEFF] to-[#003366] p-5">
+        <div class="flex justify-between items-center">
+            <ul>
+                <li class="p-4"><a class="hover:text-gray-400 no-underline text-white font-poppins font-normal md:text-xl">Volver</li>
+            </ul>
+            <a class="no-underline font-poppins font-bold text-[19px] md:text-[31px] text-white transition duration-300 hover:text-[#004A9F]" href="#">EDUCAMBIO</a>
+        </div>
+    </nav>
+
+    <!-- Login container-->
+    <section class="bg-cover bg-center bg-no-repeat flex justify-center"  style="background-image: url(img/fondoLogin.png)">
+        <div class="bg-black/70 w-full h-full flex justify-center">
+            <!-- Form container-->
+            <div class="bg-white/50 py-10 px-6 w-full h-auto my-14 md:w-96" style="border-radius: 5rem;">
+                <h1 class="py-6 text-center text-3xl font-inter">
+                    ¡Bienvenido a 
+                    <br>
+                    <span class="text-[#0063C7]">Educambio!</span>
+                </h1>
+
+                <!-- Form-->
+                <form class="flex flex-col space-y-4 w-full">
+                    <input type="email" name="emailUser" id="emailUser" placeholder="email@domain.com" required
+                    class="rounded-lg pl-2 py-1">
+                    <input type="password" name="password" id="password" placeholder="contraseña" required
+                    class="rounded-lg pl-2 py-1">
+                    <input class="rounded-md h-8 pl-4 pr-4" type="date" required>
+                    <div class="flex justify-center gap-3">
+                        <div class="mb-4">
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="role" value="profesor" class="form-checkbox text-indigo-600 h-5 w-5" id="profesor">
+                                <span class="ml-2 text-gray-700">Soy profesor</span>
+                            </label>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" name="role" value="estudiante" class="form-checkbox text-indigo-600 h-5 w-5" id="estudiante">
+                                <span class="ml-2 text-gray-700">Soy estudiante</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button 
+                    class="bg-[#0063C7] text-white font-xl rounded-lg text-center py-1">
+                    Continuar
+                    </button>
+                </form>
+                <script>
+                    document.getElementById('profesor').addEventListener('change', function() {
+                        if (this.checked) {
+                            document.getElementById('estudiante').checked = false;
+                        }
+                    });
+            
+                    document.getElementById('estudiante').addEventListener('change', function() {
+                        if (this.checked) {
+                            document.getElementById('profesor').checked = false;
+                        }
+                    });
+                </script>
+                <!--Seccion  del boton de google-->
+                <div class="flex items-center py-5">
+                    <div class="flex-grow border-t border-white"></div> <!--Línea horizontal superior-->
+                    <span class="mx-4 text-white text-[14px]">o continuar con</span> <!--Texto en medio de las líneas-->
+                    <div class="flex-grow border-t border-white"></div> <!--Línea horizontal superior-->
+                </div>
+                <button class="flex items-center justify-center bg-white rounded-lg w-full py-1 font-xl">
+                    <img src="img/Google.svg" alt="Logo de Google" class="w-6 h-6 mr-2"> 
+                    <span>Google</span>
+                </button>
+                <div class="w-full py-4">
+                    <h5 class="text-center">¿No eres miembro? - <a href="#">Registrate</a></h5>
+                    <p class="text-[11px] text-[#3E3C3C] text-center">
+                        Si continúas, aceptas los <span class="text-black text-decoration-line: underline">Términos del servicio</span> de Educambio y confirmas que has leído nuestra <span class="text-black text-decoration-line: underline">Política de privacidad</span> <span class="text-black text-decoration-line: underline">Aviso de recopilación de datos.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="bg-gradient-to-r from-[#56AEFF] to-[#003366] p-8 md:grid md:grid-cols-3 md:gap-4 flex flex-col items-center">
+        <!--Logo-->
+        <div>
+            <a class="no-underline font-poppins text-[19px] md:text-[25px] text-white transition duration-300 hover:text-[#004A9F]" href="#">EDUCAMBIO</a>
+        </div>
+
+        <!--Hipervinculos-->
+        <div class="flex items-center text-white">
+            <ul class="flex flex-col md:flex-row list-none md:gap-8 text-center"> 
+                <li class="md:p-4 hover:text-gray-400"><a class="no-underline text-inherit text-lg font-poppins leading-7" href="#">Nosotros</a> </li>
+                <li class="md:p-4 hover:text-gray-400"> <a class="no-underline text-inherit text-lg font-poppins leading-7" href="#">Nuestras clases</a> </li>
+                <li class="md:p-4 hover:text-gray-400"> <a class="no-underline text-inherit text-lg font-poppins leading-7" href="#contacto">Contacto</a> </li>
+            </ul>  
+        </div>
+
+        <!--Redes sociales-->
+        <div class="text-white flex justify-center align-center">
+            <a href="#" class="p-4 ml-auto text-2xl"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="p-4 text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="p-4 text-2xl"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="p-4 text-2xl"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+      <script src="app/tailwind.config.js"></script>
+</body>
+</html>
+

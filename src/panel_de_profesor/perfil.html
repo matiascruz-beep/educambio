@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="flex h-screen justify-evenly items-center mr-5">
+            <div class="foto flex flex-col pr-3 rounded-[100px] bg-custom-focus w-[530px] h-[510px] justify-center items-center shadow-[20px_20px_20px_rgba(0,0,0,0.5)]"> 
+                <img class="rounded-full object-cover w-[300px] h-[300px]"  src="./assets/img/student3.jpg" alt="">
+                <p class="text-white font-poppins text-[20px] mt-5 ">Elsa Capuntas</p>
+                <p class="text-white font-poppins text-[15px] mt-3 ">Profesora</p>
+            </div>
+            <div class="formulario flex justify-evenly">
+                <div class="mr-3">
+                    <form class="form items-center flex flex-col" id="crearClaseForm">
+                        <div class="flex flex-col mt-4">
+                            <label class="text-white" for="materia">Nombre y apellido</label>
+                            <input class="text-black w-[390px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="materia" name="materia" required>
+                        </div>
+                        <div class="flex flex-col mt-4">
+                            <label class="text-white" for="contenido">Teléfono celular</label>
+                            <input class="text-black w-[390px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="contenido" name="contenido" required>
+                        </div>
+                        <div class="flex mt-4">
+                            <div class="flex flex-col mr-2">
+                            <label class="text-white" for="fecha">Tipo de documento</label>
+                            <select class="text-black w-[100px] h-[40px] rounded-[40px] pl-4 pr-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="fecha" name="fecha" required>
+                                    <option value="">Seleccione un tipo de documento</option>
+                                    <option value="dni">DNI</option>
+                                    <option value="passport">Pasaporte</option>
+                                    <option value="license">Licencia de Conducir</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col">
+                            <label class="text-white" for="fecha">número</label>
+                            <input class="text-black w-[240px] h-[40px] rounded-[40px] pl-4 pr-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="fecha" name="fecha" required>
+                            </div>
+                            
+                        </div>
+                    </form>
+                    
+                </div>
+                
+                <div>
+                    <form class="form items-center flex flex-col" id="crearClaseForm">
+                        <div class="flex flex-col mt-4">
+                            <label class="text-white" for="materia">Profesión/Título</label>
+                            <input class="text-black w-[390px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="materia" name="materia" required>
+                        </div>
+                        <div class="flex flex-col mt-4">
+                            <label class="text-white" for="contenido">Estado</label>
+                            <select class="text-black w-[390px] h-[40px] rounded-[40px] pl-4 pr-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="fecha" name="fecha" required>
+                                <option value="dni">En curso</option>
+                                <option value="passport">Finalizado</option>                            </select>
+                        </div>
+                        <div class="flex flex-col mt-4">
+                            <label class="text-white" for="fecha">Provincia</label>
+                            <input class="text-black w-[390px] h-[40px] rounded-[40px] pl-4 pr-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="fecha" name="fecha" required>
+                        </div>
+                        <div class="flex flex-col mt-4">
+                            <label class="text-white" for="horario">Localidad</label>
+                            <input class="text-black w-[390px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="horario" name="horario" required>
+                        </div>
+                        <div class="flex justify-center items-center w-[150px] h-[50px] rounded-3xl bg-[#0082D6] mt-5">
+                            <button class="text-white w-[500px] h-[40px]" type="submit" id="crear">Guardar cambios</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>
