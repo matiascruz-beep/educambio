@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pescar</title>
+  </head>
+  <header class="bg-white">
+    <nav
+      class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+      aria-label="Global"
+    >
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img
+            class="h-8 w-16 md:w-32 lg:w-48"
+            src=".\img\logo_educambio.svg"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button
+          type="button"
+          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <div class="relative">
+          <a href="#" class="text-md font-semibold leading-6 text-gray-900">
+            Nosotros
+          </a>
+        </div>
+
+        <a href="#" class="text-md font-semibold leading-6 text-gray-900"
+          >Alumnos</a
+        >
+        <a href="#" class="text-md font-semibold leading-6 text-gray-900"
+          >Clases</a
+        >
+        <a href="#" class="text-md font-semibold leading-6 text-gray-900"
+          >Contacto</a
+        >
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-2"
+        >
+          Iniciar sesión
+        </button>
+        <button
+          class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full"
+        >
+          Registrarse
+        </button>
+      </div>
+    </nav>
+    <div class="lg:hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-10"></div>
+      <div
+        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+      >
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img
+              class="h-8 w-16 md:w-32 lg:w-48"
+              src=".\img\logo_educambio.svg"
+              alt=""
+            />
+          </a>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <div class="-mx-3">
+                <button
+                  type="button"
+                  class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  aria-controls="disclosure-1"
+                  aria-expanded="false"
+                >
+                  Product
+                  <!--
+                    Expand/collapse icon, toggle classes based on menu open state.
+
+                    Open: "rotate-180", Closed: ""
+                  -->
+                  <svg
+                    class="h-5 w-5 flex-none"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <!-- 'Product' sub-menu, show/hide based on menu state. -->
+              </div>
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Nosotros</a
+              >
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Alumnos</a
+              >
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Clases</a
+              >
+            </div>
+            <div class="py-6">
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >Log in</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <div class="mx-auto w-full h-screen flex justify-center">
+      <div class="relative w-full">
+        <div class="carousel h-full">
+          <div class="carousel-inner h-full">
+            <div class="carousel-item">
+              <img
+                src="./img/img_c_1.svg"
+                alt="Slide 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/img_c_2.svg"
+                alt="Slide 2"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/img_carrousel.svg"
+                alt="Slide 3"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          onclick="prevSlide()"
+          class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            <span class="hidden">Anterior</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          onclick="nextSlide()"
+          class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+            <span class="hidden">Siguiente</span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".carousel-item");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          if (i === index) {
+            slide.classList.remove("hidden");
+          } else {
+            slide.classList.add("hidden");
+          }
+        });
+      }
+
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      showSlide(currentSlide);
+
+      function goToSlide(index) {
+        currentSlide = index;
+        showSlide(currentSlide);
+      }
+
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>

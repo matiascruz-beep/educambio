@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel con Tailwind CSS</title>
+    <!-- Incluir Tailwind CSS (reemplazar con el enlace a tu archivo de Tailwind) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Incluir Swiper JS (reemplazar con el enlace a Swiper JS si lo estás usando) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body class="bg-gray-100 p-4">
+
+<div class="max-w-2xl mx-auto">
+    <div class="swiper my-4">
+        <div class="swiper-wrapper">
+            <!-- Ejemplo de tarjeta -->
+            <div class="swiper-slide bg-white shadow-md rounded-lg p-4">
+                 <div class="card">
+    <div class="hover:scale-110 hover:shadow-[#003366] transition duration-150 max-w-sm h-[4.7in] bg-white border border-gray-200 rounded-[33px] shadow dark:bg-white dark:border-gray-700 mx-auto">
+        <img class="w-[450px] h-[220px]" src="../"/>
+            <div class="p-5">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#003366] dark:text-center">Videos Educativos</h5>
+                <p class=" pb-6 mb-3 font-normal text-black text-center">Conceptos clave de tus materias utilizando ejemplos y gráficos visuales para facilitar la comprensión.</p>
+                
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            
+        </div>
+    </div>
+</div>
+            </div>
+            
+            <!-- Ejemplo de otra tarjeta -->
+            <div class="swiper-slide bg-white shadow-md rounded-lg p-4">
+                <img src="./img/img_carrousel.svg" alt="">
+            </div>
+            
+            <!-- Agrega más tarjetas según sea necesario -->
+        </div>
+        
+        <!-- Botones de navegación -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+        <!-- Paginación (opcional) -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<!-- Incluir Swiper JS (reemplazar con el enlace a Swiper JS si lo estás usando) -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    // Inicializar Swiper
+    var swiper = new Swiper('.swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+
+</body>
+</html>
