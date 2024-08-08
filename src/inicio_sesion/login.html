@@ -11,23 +11,22 @@
     <script src="https://kit.fontawesome.com/69c00dc57a.js" crossorigin="anonymous"></script>
 
     <title>Inicio de sesion</title>
-
 </head>
-<body class="mx-auto font-sans">
+<body class="mx-auto font-sans flex flex-col min-h-screen">
     <nav class="bg-gradient-to-r from-[#56AEFF] to-[#003366] p-5">
         <div class="flex justify-between items-center">
             <ul>
-                <li class="p-4"><a class="hover:text-gray-400 no-underline text-white font-poppins font-normal md:text-xl">Volver</li>
+                <li class="p-4"><a class="hover:text-gray-400 no-underline text-white font-poppins font-normal md:text-xl">Volver</a></li>
             </ul>
             <a class="no-underline font-poppins font-bold text-[19px] md:text-[31px] text-white transition duration-300 hover:text-[#004A9F]" href="#">EDUCAMBIO</a>
         </div>
     </nav>
 
     <!-- Login container-->
-    <section class="bg-cover bg-center bg-no-repeat flex justify-center"  style="background-image: url(img/fondoLogin.png)">
-        <div class="bg-black/70 w-full h-full flex justify-center">
+    <section class="bg-cover bg-center bg-no-repeat flex justify-center flex-grow" style="background-image: url(img/fondoLogin.png)">
+        <div class="bg-black/70 w-full flex items-center justify-center">
             <!-- Form container-->
-            <div class="bg-white/50 py-10 px-6 w-full h-auto my-14 md:w-96" style="border-radius: 5rem;">
+            <div class="bg-white/50 py-10 px-6 w-full max-w-md h-auto my-14" style="border-radius: 5rem;">
                 <h1 class="py-6 text-center text-3xl font-inter">
                     ¡Bienvenido a 
                     <br>
@@ -91,6 +90,7 @@
             <a href="#" class="p-4 text-2xl"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
-    <script src="app/tailwind.config.js"></script>  
+    <script src="app/tailwind.config.js"></script>
 </body>
 </html>
+

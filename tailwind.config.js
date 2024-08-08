@@ -17,6 +17,7 @@ module.exports = {
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(10deg, #0045BA 10%, #001F54 70%)',
+        'fondoaula': "url('./images/background-1.png')"
       },
       maxWidth: {
         '3000': '3000px',

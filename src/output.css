@@ -660,11 +660,6 @@ video {
   margin-bottom: 3.5rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -861,12 +856,12 @@ video {
   height: 510px;
 }
 
-.h-\[55px\] {
-  height: 55px;
+.h-\[550px\] {
+  height: 550px;
 }
 
-.h-\[580px\] {
-  height: 580px;
+.h-\[55px\] {
+  height: 55px;
 }
 
 .h-\[600px\] {
@@ -891,10 +886,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[550px\] {
-  height: 550px;
 }
 
 .min-h-full {
