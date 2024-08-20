@@ -1,0 +1,7 @@
+#control de dependencias
+node_modules/
+package-lock.json
+
+#variables de entorno
+.env*
+
