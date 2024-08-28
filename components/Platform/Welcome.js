@@ -3,18 +3,18 @@ import React from 'react'
 export default function Welcome({name, tematic, content, date, hour, student, image}) {
     return (
 
-       <div class="grid-flow-col grid-cols-2"> 
+       <div className="grid-flow-col grid-cols-2"> 
             
             
-            <div class="bg-[#5EAFF9] bg-opacity-50 rounded-[80px] w-[15in] ml-[3in] mt-6 h-[2in]">
+            <div className="bg-[#5EAFF9] bg-opacity-50 rounded-[80px] w-[15in] ml-[3in] mt-6 h-[2in]">
                 <h1>Hola! Bienvenido {name}</h1>
                 <p>En este apartado, podas ver las clases en las que te encuentras inscripto, empecemos a aprender!</p>
                 <img src={image}/>
             </div>
     
 
-            <div class="bg-orange-800 rounded-[80px] w-[15in] ml-[3in] mt-20 h-[5in]">
-                                    <table class="table-auto">
+            <div className="bg-orange-800 rounded-[80px] w-[15in] ml-[3in] mt-20 h-[5in]">
+                                    <table className="table-auto">
                         <thead>
                             <tr>
                             <th>Song</th>
