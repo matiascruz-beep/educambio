@@ -6,7 +6,7 @@ export default function Welcome({name, tematic, content, date, hour, student, im
        <div class="grid-flow-col grid-cols-2"> 
             
             
-            <div class="bg-[#5EAFF9] bg-opacity-50 rounded-[80px] w-[15in] ml-[3in] mt-6 h-[2in]">
+            <div class="bg-[#0063C7] bg-opacity-50 rounded-[80px] w-[6in] ml-[7in] mt-6 h-[2in] text-center">
                 <h1>Hola! Bienvenido {name}</h1>
                 <p>En este apartado, podas ver las clases en las que te encuentras inscripto, empecemos a aprender!</p>
                 <img src={image}/>
@@ -14,32 +14,22 @@ export default function Welcome({name, tematic, content, date, hour, student, im
     
 
             <div class="bg-orange-800 rounded-[80px] w-[15in] ml-[3in] mt-20 h-[5in]">
-                                    <table class="table-auto">
-                        <thead>
-                            <tr>
-                            <th>Song</th>
-                            <th>Artist</th>
-                            <th>Year</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-                            <td>Malcolm Lockyer</td>
-                            <td>1961</td>
-                            </tr>
-                            <tr>
-                            <td>Witchy Woman</td>
-                            <td>The Eagles</td>
-                            <td>1972</td>
-                            </tr>
-                            <tr>
-                            <td>Shining Star</td>
-                            <td>Earth, Wind, and Fire</td>
-                            <td>1975</td>
-                            </tr>
-                        </tbody>
-                        </table>
+            <table class="mt-16 w-full text-white font-poppins border-separate border-spacing-y-4">
+            <thead class="bg-[#0063C7] ">
+                <tr>
+                    <th class="text-center px-2.5 h-[95px] uppercase rounded-tl-[20px] rounded-bl-[20px]">Materia</th>
+                    <th class="text-center px-2.5 h-[95px] uppercase">Contenido</th>
+                    <th class="text-center px-2.5 h-[95px] uppercase">Fecha</th>
+                    <th class="text-center px-2.5 h-[95px] uppercase">Horario</th>
+                    <th class="text-center px-2.5 h-[95px] uppercase">Duración</th>
+                    <th class="text-center px-2.5 h-[95px] uppercase">Estudiantes</th>
+                    <th class="text-center px-2.5 h-[95px] uppercase rounded-tr-[20px] rounded-br-[20px]">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
 
             </div>
             

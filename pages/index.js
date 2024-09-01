@@ -99,12 +99,6 @@ export default function Home() {
 </div>
 
 
-
-
-
-
-
-
     <div className="bg-[#5EAFF9]/10 size-full md:size-auto pb-10">
       <div className="md:container mx-auto flex justify-between pb-5">
         <div className="mt-5">
