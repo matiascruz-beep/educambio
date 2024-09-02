@@ -1,0 +1,51 @@
+import React from 'react'
+
+export default function Formulario_perfil ({}) {
+    return (
+        <div className="formulario flex justify-evenly">
+        <form className="form items-center flex flex-col">
+        <div className="flex flex-col mt-4">
+            <label className="text-white" htmlFor="nombre">Nombre y apellido</label>
+            <input className="text-black w-[390px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="nombre" name="nombre" required />
+        </div>
+        <div className="flex flex-col mt-4">
+            <label className="text-white" htmlFor="telefono">Teléfono celular</label>
+            <input className="text-black w-[390px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="telefono" name="telefono" required />
+        </div>
+        <div className="flex mt-4">
+            <div className="flex flex-col mr-2">
+            <label className="text-white" htmlFor="documento">Tipo de documento</label>
+            <select className="text-black w-[100px] h-[40px] rounded-[40px] pl-4 pr-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" id="documento" name="documento" required>
+                <option value="">Seleccione un tipo de documento</option>
+                <option value="dni">DNI</option>
+                <option value="passport">Pasaporte</option>
+                <option value="license">Licencia de Conducir</option>
+            </select>
+            </div>
+            <div className="flex flex-col">
+            <label className="text-white" htmlFor="numeroDocumento">Número</label>
+            <input className="text-black w-[240px] h-[40px] rounded-[40px] pl-4 pr-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="numeroDocumento" name="numeroDocumento" required />
+            </div>
+        </div>
+        </form>
+
+        <form className="form items-center flex flex-col ml-8">
+        <div className="flex flex-col mt-4">
+            <label className="text-white" htmlFor="escuela">Escuela</label>
+            <input className="text-black w-[390px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="escuela" name="escuela" required />
+        </div>
+        <div className="flex flex-col mt-4">
+            <label className="text-white" htmlFor="provincia">Provincia</label>
+            <input className="text-black w-[390px] h-[40px] rounded-[40px] pl-4 pr-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="provincia" name="provincia" required />
+        </div>
+        <div className="flex flex-col mt-4">
+            <label className="text-white" htmlFor="localidad">Localidad</label>
+            <input className="text-black w-[390px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="localidad" name="localidad" required />
+        </div>
+        <div className="flex justify-center items-center w-[150px] h-[50px] rounded-3xl bg-[#0082D6] mt-5">
+            <button className="text-white w-[500px] h-[40px]" type="submit" id="crear">Guardar cambios</button>
+        </div>
+        </form>
+        </div>
+    )
+}
