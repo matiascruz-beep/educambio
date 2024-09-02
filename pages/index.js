@@ -37,6 +37,20 @@ export default function Home() {
    
 </div>
 
+<div className="bg-[url('/images/FONDO.png')] bg-cover bg-no-repeat flex items-center h-screen ">
+    <div className="flex flex-col mx-20 pb-20">
+      <h3 className="text-4xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-white">
+        APRENDE, CRECE, Y ALCANZA <br/> TUS METAS CON 
+      </h3>
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0082D6] py-6">
+        EDUCAMBIO
+      </h1>
+      <h5 className="text-4xl sm:text-l md:text-l lg:text-xl text-white">
+        CLASES DE APOYO GRATUITAS PARA<br/>ESTUDIANTES DE SECUNDARIA
+      </h5>
+    </div>
+</div>
+
 
 <div className="bg-[url('/images/fondoSQ.png')] bg-cover bg-no-repeat flex justify-center h-screen">
     <div className="p-6 sm:p-12 max-w-screen-2xl">
