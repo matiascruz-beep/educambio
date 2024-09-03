@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from "next/image";
+
 
 
 export default function clases_alumno() {
@@ -13,10 +13,10 @@ export default function clases_alumno() {
                 <p className="text-blue-500 text-center py-2 text-xl font-poppins">
                   MATEMÁTICA
                 </p>
-                <Image
+                <img
                   className="w-full h-40 object-cover"
                   src="../src/img/perfil-clase-2.jpg"
-                  alt="Imagen de la tarjeta"
+                  alt="imgn de la tarjeta"
                 />
                 <div className="p-4">
                   <h2 className="text-xl mb-2 font-bold">Juan Soliz</h2>
@@ -39,10 +39,10 @@ export default function clases_alumno() {
                 <p className="text-blue text-center py-2 text-xl font-poppins">
                   MATEMÁTICA
                 </p>
-                <Image
+                <img
                   className="w-full h-40 object-cover"
                   src="../src/img/perfil-clase-2.jpg"
-                  alt="Imagen de la tarjeta"
+                  alt="imgn de la tarjeta"
                 />
                 <div className="p-4">
                   <h2 className="text-xl font-bold mb-2">Juan Soliz</h2>
@@ -65,10 +65,10 @@ export default function clases_alumno() {
                 <p className="text-blue text-center py-2 text-xl font-poppins">
                   MATEMÁTICA
                 </p>
-                <Image
+                <img
                   className="w-full h-40 object-cover"
                   src="../src/img/perfil-clase-2.jpg"
-                  alt="Imagen de la tarjeta"
+                  alt="imgn de la tarjeta"
                 />
                 <div className="p-4">
                   <h2 className="text-xl font-bold mb-2">Juan Soliz</h2>
@@ -91,10 +91,10 @@ export default function clases_alumno() {
                 <p className="text-blue text-center py-2 text-xl font-poppins">
                   MATEMÁTICA
                 </p>
-                <Image
+                <img
                   className="w-full h-40 object-cover"
                   src="../src/img/perfil-clase-2.jpg"
-                  alt="Imagen de la tarjeta"
+                  alt="imgn de la tarjeta"
                 />
                 <div className="p-4">
                   <h2 className="text-xl font-bold mb-2">Juan Soliz</h2>
@@ -117,10 +117,10 @@ export default function clases_alumno() {
                 <p className="text-blue text-center py-2 text-xl font-poppins">
                   MATEMÁTICA
                 </p>
-                <Image
+                <img
                   className="w-full h-40 object-cover"
                   src="../src/img/perfil-clase-2.jpg"
-                  alt="Imagen de la tarjeta"
+                  alt="imgn de la tarjeta"
                 />
                 <div className="p-4">
                   <h2 className="text-xl font-bold mb-2">Juan Soliz</h2>
@@ -143,10 +143,10 @@ export default function clases_alumno() {
                 <p className="text-blue text-center py-2 text-xl font-poppins">
                   MATEMÁTICA
                 </p>
-                <Image
+                <img
                   className="w-full h-40 object-cover"
                   src="../src/img/perfil-clase-2.jpg"
-                  alt="Imagen de la tarjeta"
+                  alt="imgn de la tarjeta"
                 />
                 <div className="p-4">
                   <h2 className="text-xl font-bold mb-2">Juan Soliz</h2>
@@ -169,10 +169,10 @@ export default function clases_alumno() {
                 <p className="text-blue text-center py-2 text-xl font-poppins">
                   MATEMÁTICA
                 </p>
-                <Image
+                <img
                   className="w-full h-40 object-cover"
                   src="../src/img/perfil-clase-2.jpg"
-                  alt="Imagen de la tarjeta"
+                  alt="imgn de la tarjeta"
                 />
                 <div className="p-4">
                   <h2 className="text-xl font-bold mb-2">Juan Soliz</h2>
@@ -195,10 +195,10 @@ export default function clases_alumno() {
                 <p className="text-blue text-center py-2 text-xl font-poppins">
                   MATEMÁTICA
                 </p>
-                <Image
+                <img
                   className="w-full h-40 object-cover"
                   src="../src/img/perfil-clase-2.jpg"
-                  alt="Imagen de la tarjeta"
+                  alt="imgn de la tarjeta"
                 />
                 <div className="p-4">
                   <h2 className="text-xl font-bold mb-2">Juan Soliz</h2>
