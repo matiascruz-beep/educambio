@@ -13,7 +13,7 @@ export default function Platform () {
         <div className="flex flex-col h-screen mt-[-80px] md:flex-row md:justify-center md:items-center">
         
         <div className="flex justify-center items-center mb-4 md:mb-0">
-        <Perfil name="Juan" prop="Estudiante" />
+        <Perfil image ="/images/alumno.png" name="Juan" prop="Estudiante" />
         </div>
 
         <div className="flex justify-center items-center md:ml-8">
