@@ -46,7 +46,7 @@ export default function Formulario_perfil ({}) {
         <button className="text-white w-full h-[40px]" type="submit" id="crear">Guardar cambios</button>
         </div>
         </form>
-</div>
+        </div>
 
     )
 }
