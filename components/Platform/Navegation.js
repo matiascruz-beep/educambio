@@ -33,8 +33,8 @@ export default function Navegation ({user, name, title}) {
                     
                     <div>
                         <img src="/images/student1.jpg" className="rounded-full mt-12"/>
-                        <h2 className="text-white ml-12 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Juan Hernandez</h2>
-                        <p className="text-white ml-16 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Estudiante</p>
+                        <h2 className="text-white ml-12 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">{name}</h2>
+                        <p className="text-white ml-6 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">{title}</p>
                     </div>
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Soporte ({}) {
-    retun (
+    return (
 <div>
 
         <div className="mx-auto msj-bienvenida w-[900px] h-[265px] bg-custom-bg rounded-[30px] my-12 flex text-center items-center justify-center shadow-[10px_10px_20px_rgba(0,0,0,0.5)]">

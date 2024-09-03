@@ -4,9 +4,9 @@ import Formulario_perfil from "@/components/Platform/Formulario_perfil"
 
 export default function Platform () {
     return (
-        <main class="bg-cover bg-gradient-to-r from-[#003366] to-[#56AEFF]  h-screen w-full">
+        <main className="bg-cover bg-gradient-to-r from-[#003366] to-[#56AEFF]  h-screen w-full">
         
-        <div class="w-full">
+        <div className="w-full">
             <Navegation user="Juan" />
         </div>
 

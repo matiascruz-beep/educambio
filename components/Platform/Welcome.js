@@ -13,7 +13,7 @@ export default function Welcome({name, tematic, content, date, hour, student, im
             </div>
     
 
-            <div class="bg-orange-800 rounded-[80px] w-[15in] ml-[3in] mt-20 h-[5in]">
+            <div class="rounded-[80px] w-[15in] ml-[3in] mt-20 h-[5in]">
             <table class="mt-16 w-full text-white font-poppins border-separate border-spacing-y-4">
             <thead class="bg-[#0063C7] ">
                 <tr>
