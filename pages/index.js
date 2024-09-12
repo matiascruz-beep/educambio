@@ -10,7 +10,7 @@ export default function Home() {
 
 <div className="max-w-[2000px] mx-auto ">
     <div className="p-5 flex justify-between items-center">
-        <div className="educambio"><a class="no-underline font-bold text-[31px] tracking-wider text-[#0063C7] transition duration-300 hover:text-[#004A9F]" href="#">EDUCAMBIO</a></div>
+        <div className="educambio"><a class="no-underline font-bold text-[31px] tracking-wider text-[#0063C7] transition duration-300 hover:text-[#004A9F]" href="#inicio">EDUCAMBIO</a></div>
             <div className="lista">
                 <ul className="flex list-none gap-8"> 
                     <li className="p-4 hover:text-gray-400"><a className="no-underline text-inherit text-lg font-normal leading-7" href="#inicio">Inicio</a> </li>
@@ -21,11 +21,11 @@ export default function Home() {
             </div>
             <div>
                 <ul className="flex">
-                  <li className="flex justify-center  items-center w-[150px] h-[50px] text-center bg-[#0063C7] text-white rounded-[43px] shadow-lg transition duration-300 hover:translate-y-0.5 hover:shadow-2xl">
+                  <li className="flex justify-center  items-center w-[150px] h-[50px] text-center bg-[#0063C7] text-white rounded-[43px] shadow-lg transition duration-300 hover:translate-y-0.5 hover:shadow-2xl mr-2">
                     <a className="w-full h-full flex justify-center items-center" href="/registro/inicio_sesion">Iniciar sesión</a>
                   </li>
-                  <li className="flex justify-center items-center w-[150px] h-[50px] text-center bg-[#56AEFF] text-white rounded-[43px] shadow-lg transition duration-300 hover:translate-y-0.5 hover:shadow-2xl">
-                    <a className="w-full h-full flex justify-center items-center">Registrate</a>
+                  <li className="flex justify-center items-center w-[150px] h-[50px] text-center bg-[#56AEFF] text-white rounded-[43px] shadow-lg transition duration-300 hover:translate-y-0.5 hover:shadow-2xl ml-2">
+                    <a className="w-full h-full flex justify-center items-center" href="/registro/first_registro">Registrate</a>
                   </li>
                 </ul>
               </div>
@@ -34,7 +34,7 @@ export default function Home() {
    
 </div>
 
-<div className="bg-[url('/images/FONDO.png')] bg-cover bg-no-repeat flex items-center h-screen ">
+<div className="bg-[url('/images/FONDO.png')] bg-cover bg-no-repeat flex items-center h-screen " id="inicio">
     <div className="flex flex-col mx-20 pb-20">
       <h3 className="text-4xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-white">
         APRENDE, CRECE, Y ALCANZA <br/> TUS METAS CON 
@@ -49,7 +49,7 @@ export default function Home() {
 </div>
 
 
-<div className="bg-[url('/images/fondoSQ.png')] bg-cover bg-no-repeat flex justify-center h-screen">
+<div className="bg-[url('/images/fondoSQ.png')] bg-cover bg-no-repeat flex justify-center h-screen" id="sabiasque">
     <div className="p-6 sm:p-12 max-w-screen-2xl">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0082D6]">
             ¿Sabías qué?
@@ -79,7 +79,7 @@ export default function Home() {
 
 
 
-<div className="bg-[url('/images/FONDO.png')] bg-cover bg-no-repeat bg-center min-h-screen flex items-center justify-center bg-neutral-700">
+<div className="bg-[url('/images/FONDO.png')] bg-cover bg-no-repeat bg-center min-h-screen flex items-center justify-center bg-neutral-700" id="nosotros">
 
 <div className="container mx-auto p-8 mt-12">
     <h2 className="text-4xl font-bold text-center mb-8 text-[#0082D6]">¿Quiénes Somos?</h2>
@@ -135,7 +135,7 @@ export default function Home() {
     </div>
 
 
-    <Footer/>
+    <Footer id="contacto"/>
 
     </main>
   );
