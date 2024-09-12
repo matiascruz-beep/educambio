@@ -9,7 +9,7 @@ export default function() {
                 <Nav_registro/>
             </div>
 
-            <div className="bg-cover bg-center bg-no-repeat flex justify-center flex-grow">
+            <div className="bg-[url('/images/fondoRG.png')] bg-cover bg-center bg-no-repeat flex justify-center flex-grow">
                 <div className="bg-black/70 w-full flex items-center justify-center">
                     <div className="bg-white/50 py-10 px-6 w-full max-w-md h-auto my-14" style={{ borderRadius: '5rem' }}>
                         <h1 className="py-6 text-center text-3xl font-inter">
@@ -106,7 +106,7 @@ export default function() {
                             <div className="flex-grow border-t border-white"></div>
                         </div>
                         <button className="flex items-center justify-center bg-white rounded-lg w-full py-1 font-xl">
-                        <img src="img/Google.svg" alt="Logo de Google" className="w-6 h-6 mr-2" />
+                        <img src="/images/google.png" alt="Logo de Google" className="w-6 h-6 mr-2" />
                         <span>Google</span>
                         </button>
 
