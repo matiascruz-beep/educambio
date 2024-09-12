@@ -1,34 +1,31 @@
 import Image from "next/image";
-import { League_Spartan } from "next/font/google";
 import Card from "@/components/Home/Card"
 import Integrantes from "@/components/Home/Integrantes"
 import Footer from "@/components/Home/Footer"
 
 
-const font = League_Spartan({subsets: ['latin'], variable: '--font-league'});
-
 export default function Home() {
   return (
-    <main className={`${font.variable} font-league`}>
+    <main >
 
 <div className="max-w-[2000px] mx-auto ">
     <div className="p-5 flex justify-between items-center">
-        <div className="educambio"><a class="no-underline font-poppins font-bold text-[31px] tracking-wider text-[#0063C7] transition duration-300 hover:text-[#004A9F]" href="#">EDUCAMBIO</a></div>
+        <div className="educambio"><a class="no-underline font-bold text-[31px] tracking-wider text-[#0063C7] transition duration-300 hover:text-[#004A9F]" href="#">EDUCAMBIO</a></div>
             <div className="lista">
                 <ul className="flex list-none gap-8"> 
-                    <li className="p-4 hover:text-gray-400"><a className="no-underline text-inherit text-lg font-poppins font-normal leading-7" href="#inicio">Inicio</a> </li>
-                    <li className="p-4 hover:text-gray-400"> <a className="no-underline text-inherit text-lg font-poppins font-normal leading-7" href="#sabiasque">¿Sabías que?</a> </li>
-                    <li className="p-4 hover:text-gray-400"> <a className="no-underline text-inherit text-lg font-poppins font-normal leading-7" href="#nosotros">Nosotros</a> </li>
-                    <li className="p-4 hover:text-gray-400"> <a className="no-underline text-inherit text-lg font-poppins font-normal leading-7" href="#contacto">Contacto</a> </li>
+                    <li className="p-4 hover:text-gray-400"><a className="no-underline text-inherit text-lg font-normal leading-7" href="#inicio">Inicio</a> </li>
+                    <li className="p-4 hover:text-gray-400"> <a className="no-underline text-inherit text-lg font-normal leading-7" href="#sabiasque">¿Sabías que?</a> </li>
+                    <li className="p-4 hover:text-gray-400"> <a className="no-underline text-inherit text-lg font-normal leading-7" href="#nosotros">Nosotros</a> </li>
+                    <li className="p-4 hover:text-gray-400"> <a className="no-underline text-inherit text-lg font-normal leading-7" href="#contacto">Contacto</a> </li>
                 </ul>  
             </div>
-            <div className="buttons">
+            <div>
                 <ul className="flex">
                   <li className="flex justify-center  items-center w-[150px] h-[50px] text-center bg-[#0063C7] text-white rounded-[43px] shadow-lg transition duration-300 hover:translate-y-0.5 hover:shadow-2xl">
-                    <a className="w-full h-full font-poppins flex justify-center items-center" href="">Iniciar sesión</a>
+                    <a className="w-full h-full flex justify-center items-center" href="/registro/inicio_sesion">Iniciar sesión</a>
                   </li>
                   <li className="flex justify-center items-center w-[150px] h-[50px] text-center bg-[#56AEFF] text-white rounded-[43px] shadow-lg transition duration-300 hover:translate-y-0.5 hover:shadow-2xl">
-                    <a className="w-full h-full font-poppins flex justify-center items-center" href="">Registrate</a>
+                    <a className="w-full h-full flex justify-center items-center">Registrate</a>
                   </li>
                 </ul>
               </div>
@@ -73,7 +70,7 @@ export default function Home() {
                 Si eres profesor recibido o en formación y <span className="font-bold">te gustaría unirte</span> a nuestra causa, <span className="font-bold">¡te invitamos a hacerlo!</span> Juntos, podemos hacer una diferencia significativa en la educación de nuestros jóvenes.
             </p>
             <div className="pt-5">
-                <button className="rounded-[43px] w-[160px] h-[55px] bg-[#0063C7] text-white uppercase font-bold">Registrate</button>
+                <button className="rounded-[43px] w-[160px] h-[55px] bg-[#0063C7] text-white uppercase font-bold" href="/registro/registro_profesor">Registrate</button>
             </div>
         </div>
     </div>
@@ -123,7 +120,7 @@ export default function Home() {
 
 
         <div className="p-3">
-          <button className="rounded-[43px] w-[160px] h-[55px]  bg-[#0063C7] active:scale-75 transition duration-150 text-white uppercase font-bold">Reserva una clase</button>
+          <button className="rounded-[43px] w-[160px] h-[55px] bg-[#0063C7] active:scale-75 transition duration-150 text-white uppercase font-bold">Reserva una clase</button>
         </div>
       </div>
 

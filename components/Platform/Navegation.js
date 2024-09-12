@@ -3,7 +3,10 @@ import { FaHome, FaFileSignature, FaCalendarAlt, FaRegUserCircle } from "react-i
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
 
-export default function Navegation ({user, name, title}) {
+
+
+
+export default function Navegation ({user, name, title, link1, link2, link3, link4}) {
     return (
         <div>
                 <div>
@@ -32,7 +35,7 @@ export default function Navegation ({user, name, title}) {
                     <div>
                     
                     <div>
-                        <img src="/images/student1.jpg" className="rounded-full mt-12"/>
+                        <img src="/images/student1.jpg" className="rounded-full mt-12 ml-1 w-40 "/>
                         <h2 className="text-white ml-12 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">{name}</h2>
                         <p className="text-white ml-6 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">{title}</p>
                     </div>
@@ -42,30 +45,30 @@ export default function Navegation ({user, name, title}) {
 
                     <div class="flex pt-10">
                         <div>   
-                        <FaHome className="text-white w-10 h-10 ml-1" />
+                        <FaHome className="text-white w-10 h-10 ml-[1.2rem]" />
                         </div>
-                        <p class="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Inicio</p>
+                        <a href={link1} class="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Inicio</a>
                     </div>
     
                     <div class="flex pt-10">
                         <div>
-                        <FaFileSignature className="text-white w-10 h-10 ml-2" />
+                        <FaFileSignature className="text-white w-10 h-10 ml-6" />
                         </div>
-                        <p class="text-white pl-4 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-75 delay-[45ms] whitespace-nowrap">Anotarse a clase</p>
+                        <a href={link2} class="text-white pl-4 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-75 delay-[45ms] whitespace-nowrap">Anotarse a clase</a>
                     </div>
     
                     <div class="flex pt-10">
                         <div>
-                        <IoChatbubbleEllipsesOutline className="text-white w-10 h-10 ml-2" />
+                        <IoChatbubbleEllipsesOutline className="text-white w-10 h-10 ml-[1.2rem]" />
                         </div>
-                        <p class="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Soporte</p>
+                        <a href={link3} class="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Soporte</a>
                     </div>
     
                     <div class="flex pt-10">
                         <div>
-                        <FaCalendarAlt className="text-white w-10 h-10 ml-2"/>
+                        <FaCalendarAlt className="text-white w-10 h-10 ml-[1.2rem]"/>
                         </div>
-                        <p class="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Calendario</p>
+                        <a href={link4} class="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Calendario</a>
                     </div>
     
                 </div> 
@@ -74,3 +77,4 @@ export default function Navegation ({user, name, title}) {
         
     )
 }
+

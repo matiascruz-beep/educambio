@@ -1,10 +1,14 @@
 import React from 'react'
+import Navegation from '@/components/Platform/Navegation'
 
 
 
 export default function clases_alumno() {
   return (
     <main className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+
+<Navegation user="Ramiro" name="Juan Rodriguez" title="Alumno 6to E.S.B" link1="/plataforma_alumno/panel_de_alumno" link2="/plataforma_alumno/clases_alumno" link3="/plataforma_alumno/soporte_alumno"/>
+
       <div className="container">
         <div className="swiper-container">
           <div className="swiper-wrapper">

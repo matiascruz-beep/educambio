@@ -2,19 +2,19 @@ import React from 'react'
 
 export default function Welcome({name, tematic, content, date, hour, student, image}) {
     return (
-
-       <div class="grid-flow-col grid-cols-2"> 
+    
+       <div className="grid-flow-col grid-cols-2">
             
             
             <div class="bg-[#0063C7] bg-opacity-50 rounded-[80px] w-[6in] ml-[7in] mt-6 h-[2in] text-center">
-                <h1>Hola! Bienvenido {name}</h1>
-                <p>En este apartado, podas ver las clases en las que te encuentras inscripto, empecemos a aprender!</p>
-                <img src={image}/>
+                <h1 className="font-bold">¡Hola! Bienvenido {name}</h1>
+                <p className="font-semibold">En este apartado, podas ver las clases en las que te encuentras inscripto <br/> ¡Empecemos a aprender!</p>
+                <img src="/images/robotito.png" className="flex w-20 ml-20"/>
             </div>
     
 
             <div class="rounded-[80px] w-[15in] ml-[3in] mt-20 h-[5in]">
-            <table class="mt-16 w-full text-white font-poppins border-separate border-spacing-y-4">
+            <table class="mt-16 w-full text-white border-separate border-spacing-y-4">
             <thead class="bg-[#0063C7] ">
                 <tr>
                     <th class="text-center px-2.5 h-[95px] uppercase rounded-tl-[20px] rounded-bl-[20px]">Materia</th>
@@ -34,5 +34,6 @@ export default function Welcome({name, tematic, content, date, hour, student, im
             </div>
             
         </div>
+
     )
 }

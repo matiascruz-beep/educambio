@@ -9,7 +9,7 @@ export default function Soporte ({}) {
             <img src="./assets/img/Robotito.png" alt=""/>
             </div>
         <div className="">
-        <h1 className="text-white m-2.5 font-poppins text-3xl font-bold">¿Tenes alguna duda?</h1>
+        <h1 className="text-white m-2.5 text-3xl font-bold">¿Tenes alguna duda?</h1>
         <p className="text-white m-2.5 text-left leading-5 font-poppins">En este apartado podrás contactarte con el soporte, ¡Adelante!</p>
         </div>
     </div>  
