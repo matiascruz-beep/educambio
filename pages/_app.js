@@ -7,8 +7,6 @@ const poppins = Poppins ({subsets: ['latin'], variable: '--font-poppins', weight
 
 
 export default function App({ Component, pageProps }) {
-
-
   return (  
   <main className={poppins.variable}>
     <Component {...pageProps} />

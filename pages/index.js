@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Card from "@/components/Home/Card"
 import Integrantes from "@/components/Home/Integrantes"
 import Footer from "@/components/Home/Footer"
