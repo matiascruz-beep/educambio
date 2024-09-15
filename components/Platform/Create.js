@@ -5,7 +5,7 @@ export default function Create ({}) {
 
         <div>
 
-        <div class="flex align-middle justify-center font-poppins">
+        <div className="flex align-middle justify-center font-poppins">
             <p className="text-[2.9rem] text-white mt-16">
                 Crear clase
             </p>
