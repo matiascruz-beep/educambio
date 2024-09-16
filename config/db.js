@@ -13,7 +13,7 @@ const {DB_PROT,DB_USER,DB_PASS,DB_HOST,DB_PORT,DB,URI
 //Conexion con servidor mondodb
 const dbConn = () => mongoose.connect(URI ?? "mongodb://localhost:27017")
     .then(()=>{
-        console.log(`Conectado con DB ${DB}`)
+        console.log(`Conectado con DB test`)
 })
     .catch((e)=>{
     console.log(`Error: ${e}`)

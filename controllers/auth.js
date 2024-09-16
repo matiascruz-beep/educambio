@@ -24,6 +24,8 @@ export const signinForm = (req, res) => {
 
 // Renderiza el formulario de inicio de sesión con un mensaje de bienvenida
 export const loginForm = (req, res) => {
+
+    //res.render("layouts/login",{messageError: "h"})
      // Construye la ruta completa al archivo HTML
         const filePath = path.join(__dirname, '..', 'src','inicio_sesion', 'login.html');
     
@@ -67,10 +69,15 @@ export const getLogin = async (req, res) => {
             Authorization: "Bearer " + token
         });
        // Redirige a la ruta '/login-success'
-        res.redirect('/inicio');
-        //res.render("layouts/home", {usuario : username}) tiene que hacer esto
+        //res.redirect('/inicio/');
+        res.render("layouts/home", {usuario : username}) //tiene que hacer esto
+        // Construye la ruta completa al archivo HTML
+        //const filePath = path.join(__dirname, '..', 'src','panel_de_profesor', 'inicio.html');
+        // Envía el archivo HTML al cliente
+        //res.sendFile(filePath);
     } catch (error) {
         // Agregar detalles del error a la consola para depuración
+        console.log("error")
         console.error("Error durante el inicio de sesión:", error);
         res.json({
             error: true,
