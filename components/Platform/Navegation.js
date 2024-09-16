@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaHome, FaFileSignature, FaCalendarAlt, FaRegUserCircle } from "react-icons/fa";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
@@ -16,7 +17,7 @@ export default function Navegation ({user, name, title, link1, link2, link3, lin
                                  <div className="mr-2" id="userIcon">
                                         <FaRegUserCircle className="w-8 h-8 ml-1"/>      
                                       <div id="userMenu" className="bg-white rounded-2xl p-4 text-clip opacity-0 absolute top-full right-0 mt-2 w-36 z-10 hidden">
-                                           <a className="text-black w-full hover:bg-gray-200" href="#" id="perfil">Perfil</a>
+                                           <Link className="text-black w-full hover:bg-gray-200" href="/components/Platform/Perfil.js">Perfil</Link>
                                             <p className="text-black">Cerrar sesión</p>
                                      </div>
                                                         
@@ -47,21 +48,21 @@ export default function Navegation ({user, name, title, link1, link2, link3, lin
                         <div>   
                         <FaHome className="text-white w-10 h-10 ml-[1.6rem] transition duration-150 delay-[45ms]" />
                         </div>
-                        <a href={link1} className="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Inicio</a>
+                        <Link href={link1} className="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Inicio</Link>
                     </div>
     
                     <div className="flex pt-10">
                         <div>
                         <FaFileSignature className="text-white w-10 h-10 ml-[1.9rem] transition duration-150 delay-[45ms]" />
                         </div>
-                        <a href={link2} className="text-white pl-4 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-75 delay-[45ms] whitespace-nowrap">Anotarse a clase</a>
+                        <Link href={link2} className="text-white pl-4 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-75 delay-[45ms] whitespace-nowrap">Anotarse a clase</Link>
                     </div>
     
                     <div className="flex pt-10">
                         <div>
                         <IoChatbubbleEllipsesOutline className="text-white w-10 h-10 ml-[1.6rem] transition duration-150 delay-[45ms]" />
                         </div>
-                        <a href={link3} className="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Soporte</a>
+                        <Link href={link3} className="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Soporte</Link>
                     </div>
     
                     <div className="flex pt-10">
