@@ -6,7 +6,7 @@ export default function Footer_registro ({}) {
     <div className="bg-gradient-to-r from-[#56AEFF] to-[#003366] p-8 md:grid md:grid-cols-3 md:gap-4 flex flex-col items-center">
 
         <div>
-            <a className="no-underline font-poppins text-[19px] md:text-[25px] text-white transition duration-300 hover:text-[#004A9F]" href="#">
+            <a className="no-underline text-[19px] md:text-[25px] text-white transition duration-300 hover:text-[#004A9F]" href="#">
             EDUCAMBIO
             </a>
         </div>
@@ -15,17 +15,17 @@ export default function Footer_registro ({}) {
         <div className="flex items-center justify-center text-white">
             <ul className="flex flex-col md:flex-row list-none md:gap-8 text-center">
                 <li className="md:p-4 hover:text-gray-400">
-                <a className="no-underline text-inherit text-lg font-poppins leading-7" href="#">
+                <a className="no-underline text-inherit text-lg leading-7" href="#">
                 Nosotros
                 </a>
                 </li>
                 <li className="md:p-4 hover:text-gray-400">
-                <a className="no-underline text-inherit text-lg font-poppins leading-7" href="#">
+                <a className="no-underline text-inherit text-lg leading-7" href="#">
                 Nuestras clases
                 </a>
                 </li>
                 <li className="md:p-4 hover:text-gray-400">
-                <a className="no-underline text-inherit text-lg font-poppins leading-7" href="#contacto">
+                <a className="no-underline text-inherit text-lg leading-7" href="#contacto">
                 Contacto
                 </a>
                 </li>

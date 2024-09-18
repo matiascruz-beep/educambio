@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function Footer ({}) {
     return (
-        <div className="bg-black text-white">
+        <div className="bg-black text-white" id="contacto">
 
         <div className="mx-[25rem] grid grid-cols-3 grid-flow-col gap-5">
             <div className="p-5">
-                <h2 className="mb-10 text-2xl font-poppins tracking-[0.5rem]">EDUCAMBIO</h2>
+                <h2 className="mb-10 text-2xl tracking-[0.5rem]">EDUCAMBIO</h2>
                 <p className="mb-[6rem] font-light">Una educación secundaria sólida puede abrir puertas a futuras oportunidades.</p>
                 <div className="mt-4 flex gap-8">
                     <a href="https://www.facebook.com/" target="_blank">
@@ -90,8 +90,8 @@ export default function Footer ({}) {
         </div>
 
         <div className="grid grid-cols-1 gap-10 py-5 md:grid-cols-2">
-            <p className="mr-2 text-xs text-slate-600 text-end font-poppins">© EDUCAMBIO 2024 - Todos los derechos reservados.</p>
-            <div className="ml-2 flex items-center space-x-4 text-xs font-poppins text-slate-600 ">
+            <p className="mr-2 text-xs text-slate-600 text-end">© EDUCAMBIO 2024 - Todos los derechos reservados.</p>
+            <div className="ml-2 flex items-center space-x-4 text-xs text-slate-600 ">
                 <a href="#">Privacy Policy</a>
                 <div className="h-4 w-px bg-slate-200"></div>
                 <a href="#">Terms and Conditions</a></div>

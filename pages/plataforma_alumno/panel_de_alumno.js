@@ -6,7 +6,9 @@ export default function Platform () {
         <main class="bg-cover bg-gradient-to-r from-[#003366] to-[#56AEFF] pb-[6.7rem]">
         
         <div>
-            <Navegation user="Juan" name="Juan Rodriguez" title="Alumno 6to E.S.B"/>
+        
+        <Navegation user="Ramiro" name="Juan Rodriguez" title="Alumno 6to E.S.B" link1="/plataforma_alumno/panel_de_alumno" link2="/plataforma_alumno/clases_alumno" link3="/plataforma_alumno/soporte_alumno"/>    
+       
         </div>
 
         <div>

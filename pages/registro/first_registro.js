@@ -9,7 +9,7 @@ export default function() {
                 <Nav_registro/>
             </div>
 
-            <div className="bg-[url('/images/fondoLogin.png')] bg-cover bg-center bg-no-repeat flex justify-center flex-grow">
+            <div className="bg-[url('/images/fondoRG.png')] bg-cover bg-center bg-no-repeat flex justify-center flex-grow">
                 <div className="bg-black/70 w-full flex items-center justify-center">
                     <div className="bg-white/50 py-10 px-6 w-full max-w-md h-auto my-14" style={{ borderRadius: '5rem' }}>
                         <h1 className="py-6 text-center text-3xl font-inter">
@@ -18,7 +18,23 @@ export default function() {
                         <span className="text-[#0063C7]">Educambio!</span>
                         </h1>
 
-                        <form className="flex flex-col space-y-4 w-full">
+                        <form 
+                            className="flex flex-col space-y-4 w-full"
+                            onSubmit={(e) => {
+                                e.preventDefault();
+                            
+                                const isProfesor = document.getElementById('profesor').checked;
+                                const isEstudiante = document.getElementById('estudiante').checked;
+                            
+                                if (isProfesor) {
+                                    window.location.href = './registro_profesor';
+                                } else if (isEstudiante) {
+                                    window.location.href = './registro_alumno';
+                                } else {
+                                alert('Por favor, selecciona una opción antes de continuar.');
+                                }
+                            }}
+                        >
                             <input
                             type="email"
                             name="emailUser"
@@ -35,6 +51,50 @@ export default function() {
                             required
                             className="rounded-lg pl-2 py-1"
                             />
+                            <input
+                            type="text"
+                            name="date"
+                            id="date"
+                            placeholder="dd/mm/aaaa"
+                            required
+                            className="rounded-lg pl-2 py-1"
+                            />
+                            <div className="flex items-center justify-center text-white">
+                                <div className="pr-6">
+                                    <input
+                                    type="checkbox"
+                                    id="profesor"
+                                    name="rol"
+                                    className="p-4"
+                                    onChange={(e) => {
+                                        if (e.target.checked) {
+                                        document.getElementById('estudiante').checked = false;
+                                        }
+                                    }}
+                                    />
+                                    <label htmlFor="profesor" className="p-4">
+                                    Soy profesor
+                                    </label>
+                                </div>
+
+                                <div>
+                                    <input
+                                    type="checkbox"
+                                    id="estudiante"
+                                    name="rol"
+                                    className="p-4"
+                                    onChange={(e) => {
+                                        if (e.target.checked) {
+                                        document.getElementById('profesor').checked = false;
+                                        }
+                                    }}
+                                    />
+                                    <label htmlFor="estudiante" className="p-4">
+                                    Soy estudiante
+                                    </label>
+                                </div>
+                                </div>
+
                         <button className="bg-[#0063C7] text-white font-xl rounded-lg text-center py-1">
                         Continuar
                         </button>
@@ -49,7 +109,6 @@ export default function() {
                         <img src="/images/google.png" alt="Logo de Google" className="w-6 h-6 mr-2" />
                         <span>Google</span>
                         </button>
-
 
                         <div className="w-full py-4">
                             <h5 className="text-center">

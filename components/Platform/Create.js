@@ -2,10 +2,26 @@ import React from 'react'
 
 export default function Create ({}) {
     return ( 
-        <div className="grid grid-cols-2">
-                          <form className="form items-center flex flex-col mt-5" id="crearClaseForm"/>
-                              <div className="flex">
-                                  <div className="mr-3">
+
+        <div>
+
+        <div className="flex align-middle justify-center font-poppins">
+            <p className="text-[2.9rem] text-white mt-16">
+                Crear clase
+            </p>
+        </div>
+
+
+            <div className="mx-auto msj-bienvenida w-[8in] h-[6in] rounded-[30px] mt-[4.15rem] flex text-center items-center justify-center shadow-[10px_10px_20px_rgba(0,0,0,0.5)]">
+                
+      
+
+                        <div className="grid grid-cols-1 align-middle">
+                           
+
+                          <form id=""/>
+                              <div className="">
+                                  <div className="mr-10">
                                       <div className="flex flex-col mt-4">
                                           <label className="text-white" for="materia">Materia:</label>
                                           <input className="text-black w-[400px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="materia" name="materia" placeholder="ej: matemática" required/>
@@ -45,9 +61,11 @@ export default function Create ({}) {
                                       </div>  
                                   </div> 
                               </div>
-                              <div className="flex justify-center w-[200px] h-[40px] rounded-3xl bg-[#0082D6] mt-5">
+                              <div className="w-[200px] h-[40px] rounded-3xl bg-[#0082D6] ml-28 mt-6">
                                   <button className="text-white w-[200px] h-[40px]" type="submit" id="crear">Crear Clase</button>
                               </div> 
+                </div>
+                </div>
          </div>
     )
 }

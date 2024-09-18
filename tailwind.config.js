@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: { 
       fontFamily:{
-        league:["var(--font-league)"]
+        poppins:["var(--font-poppins)"]
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

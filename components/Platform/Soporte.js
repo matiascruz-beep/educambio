@@ -4,12 +4,12 @@ export default function Soporte ({}) {
     return (
 <div>
 
-        <div className="mx-auto msj-bienvenida w-[900px] h-[265px] bg-custom-bg rounded-[30px] my-12 flex text-center items-center justify-center shadow-[10px_10px_20px_rgba(0,0,0,0.5)]">
+        <div className="mx-auto msj-bienvenida w-[900px] h-[130px] bg-custom-bg rounded-[30px] my-12 flex text-center items-center justify-center shadow-[10px_10px_20px_rgba(0,0,0,0.5)]">
         <div className="robotito">
             <img src="./assets/img/Robotito.png" alt=""/>
             </div>
         <div className="">
-        <h1 className="text-white m-2.5 font-poppins text-3xl font-bold">¿Tenes alguna duda?</h1>
+        <h1 className="text-white m-2.5 text-3xl font-bold">¿Tenes alguna duda?</h1>
         <p className="text-white m-2.5 text-left leading-5 font-poppins">En este apartado podrás contactarte con el soporte, ¡Adelante!</p>
         </div>
     </div>  
