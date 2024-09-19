@@ -25,12 +25,12 @@ export const signinForm = (req, res) => {
 // Renderiza el formulario de inicio de sesión con un mensaje de bienvenida
 export const loginForm = (req, res) => {
 
-    //res.render("layouts/login",{messageError: "h"})
+    res.render("layouts/login",{messageError: "h"})
      // Construye la ruta completa al archivo HTML
-        const filePath = path.join(__dirname, '..', 'src','inicio_sesion', 'login.html');
+        /*const filePath = path.join(__dirname, '..', 'src','inicio_sesion', 'login.html');*/
     
      // Envía el archivo HTML al cliente
-        res.sendFile(filePath);
+        //res.sendFile(filePath);
 };
 
 // Maneja el inicio de sesión de usuarios
@@ -68,9 +68,17 @@ export const getLogin = async (req, res) => {
         res.header({
             Authorization: "Bearer " + token
         });
+        try {
+            console.log("hola no ocurrio error")
+            res.render("layouts/home", { usuario: username });
+            
+        } catch (error) {
+            console.error("Error al renderizar la página home:", error);
+            res.status(500).send("Ocurrió un error al cargar la página");
+        }
        // Redirige a la ruta '/login-success'
         //res.redirect('/inicio/');
-        res.render("layouts/home", {usuario : username}) //tiene que hacer esto
+        //res.render("layouts/home", {usuario : username}) //tiene que hacer esto
         // Construye la ruta completa al archivo HTML
         //const filePath = path.join(__dirname, '..', 'src','panel_de_profesor', 'inicio.html');
         // Envía el archivo HTML al cliente

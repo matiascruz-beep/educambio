@@ -1,8 +1,0 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/registro/inicio_sesion": "pages/registro/inicio_sesion.js",
-  "/registro/first_registro": "pages/registro/first_registro.js"
-}
