@@ -7,7 +7,7 @@ export default function Platform () {
         <main className="bg-cover bg-gradient-to-r from-[#003366] to-[#56AEFF]  h-screen w-full">
         
         <div className="w-full">
-        <Navegation user="Ramiro" name="Ramiro Ramirez" title="Profesor de Matemática" link1="/plataforma_profesor/perfil_profesor" link2="/plataforma_profesor/clases_profesor" link3="/plataforma_profesor/soporte_profesor"/>
+        <Navegation user="Ramiro" name="Ramiro Ramirez" title="Profesor de Matemática" link1="/plataforma_profesor/panel_de_profesor" link2="/plataforma_profesor/clases_profesor" link3="/plataforma_profesor/soporte_profesor"/>
         </div>
 
         <div className="flex flex-col h-screen mt-[-80px] md:flex-row md:justify-center md:items-center">
