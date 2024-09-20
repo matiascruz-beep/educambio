@@ -3,7 +3,7 @@ import { Router } from "express"  // Importa el constructor 'Router' de Express
 
 const auth = Router();  // Crea una nueva instancia de un enrutador
 
-auth.get("/", a.homePage)  // Define una ruta GET para la página principal, manejada por 'a.homePage'
+auth.get("/home", a.homePage)  // Define una ruta GET para la página principal, manejada por 'a.homePage'
 
 auth.get("/login", a.loginForm)  // Define una ruta GET para mostrar el formulario de acceso, manejada por 'a.loginForm'
 auth.post("/login", a.getLogin)  // Define una ruta POST para procesar el acceso y devolver un token, manejada por 'a.getLogin'
