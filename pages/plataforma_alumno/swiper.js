@@ -72,7 +72,7 @@ const MySwiper = () => {
       topic: "Historia Pública",
       availableSlots: 8,
     },
-    // Puedes añadir más tarjetas aquí
+
   ];
 
   return (
