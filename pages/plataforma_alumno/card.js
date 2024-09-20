@@ -16,7 +16,7 @@ const Card = ({
           {subject}
         </p>
         <img
-          className="w-full h-50 object-cover"
+          className="w-full h-30 object-cover"
           src={imageSrc}
           alt="imagen de la tarjeta"
         />
