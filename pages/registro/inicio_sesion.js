@@ -18,15 +18,14 @@ export default function() {
                         <span className="text-[#0063C7]">Educambio!</span>
                         </h1>
 
-                        <form className="flex flex-col space-y-4 w-full">
+                        <form className="flex flex-col space-y-4 w-full" method="post" action="/login">
                             <input
-                            type="email"
-                            name="emailUser"
-                            id="emailUser"
-                            placeholder="email@domain.com"
-                            required
-                            className="rounded-lg pl-2 py-1"
-                            />
+                            type="text" 
+                            name="username" 
+                            id="username"  
+                            placeholder="usuario" 
+                            class="rounded-lg pl-2 py-1" 
+                            autocomplete="true"/>
                             <input
                             type="password"
                             name="password"

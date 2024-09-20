@@ -20,7 +20,7 @@ export default function() {
 
                         <form 
                             className="flex flex-col space-y-4 w-full"
-                            onSubmit={(e) => {
+                            /*onSubmit={(e) => {
                                 e.preventDefault();
                             
                                 const isProfesor = document.getElementById('profesor').checked;
@@ -33,12 +33,18 @@ export default function() {
                                 } else {
                                 alert('Por favor, selecciona una opción antes de continuar.');
                                 }
-                            }}
-                        >
+                            }}*/
+                        method="post" action="/signin" id="signin">
+                                <input type="text" 
+                                name="username" 
+                                id="username"  
+                                placeholder="usuario" 
+                                class="rounded-lg pl-2 py-1" 
+                                autocomplete="true"/>
                             <input
                             type="email"
-                            name="emailUser"
-                            id="emailUser"
+                            name="email"
+                            id="email"
                             placeholder="email@domain.com"
                             required
                             className="rounded-lg pl-2 py-1"
@@ -46,13 +52,21 @@ export default function() {
                             <input
                             type="password"
                             name="password"
-                            id="password"
+                            id="pass1"
                             placeholder="contraseña"
                             required
                             className="rounded-lg pl-2 py-1"
                             />
                             <input
-                            type="text"
+                            type="password"
+                            name="password"
+                            id="pass2"
+                            placeholder="repita la contraseña"
+                            required
+                            className="rounded-lg pl-2 py-1"
+                            />
+                            <input
+                            type="date"
                             name="date"
                             id="date"
                             placeholder="dd/mm/aaaa"
