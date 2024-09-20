@@ -5,30 +5,36 @@ import { auth } from "../utils/index.js";  // Importa la función de autenticaci
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import path from 'path';
+const dev = process.env.NODE_ENV !== 'production';
 
+import next from 'next';
+const nextApp = next({ dev });
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Renderiza la página principal del sitio
 export const homePage = (req, res) => {
-    res.render("layouts/home", {});
+    
+    res.redirect('/'); // Asegúrate de que 'index' sea la página que quieres mostrar
+    //res.redirect('/')
 };
+
 
 // Renderiza el formulario de registro con un mensaje de bienvenida
 export const signinForm = (req, res) => {
     // Construye la ruta completa al archivo HTML
-    const filePath = path.join(__dirname, '..', 'src','inicio_sesion', 'registro_general.html');
-    // Envía el archivo HTML al cliente
-    res.sendFile(filePath);
+    res.redirect('/registro/first_registro');
 };
 
 // Renderiza el formulario de inicio de sesión con un mensaje de bienvenida
 export const loginForm = (req, res) => {
      // Construye la ruta completa al archivo HTML
-        const filePath = path.join(__dirname, '..', 'src','inicio_sesion', 'login.html');
-    
+        //const filePath = path.join(__dirname, '..', 'src','inicio_sesion', 'login.html');
+     // Redirige a la ruta de Next.js donde se encuentra tu componente de login
+        res.redirect('/registro/inicio_sesion');
      // Envía el archivo HTML al cliente
-        res.sendFile(filePath);
+        //res.sendFile(filePath);
+    
 };
 
 // Maneja el inicio de sesión de usuarios
@@ -67,7 +73,7 @@ export const getLogin = async (req, res) => {
             Authorization: "Bearer " + token
         });
        // Redirige a la ruta '/login-success'
-        res.redirect('/inicio');
+        res.redirect('/plataforma_profesor/panel_de_profesor');
         //res.render("layouts/home", {usuario : username}) tiene que hacer esto
     } catch (error) {
         // Agregar detalles del error a la consola para depuración
@@ -94,14 +100,11 @@ export const getSignIn = async (req, res) => {
         .then(() => {
             if(profesor){
                  // Construye la ruta completa al archivo HTML dentro de la carpeta 'inicio_sesion'
-            const filePath = path.join(__dirname, '..', 'src','formulario', 'forumlario_profesor.html');
+                    res.redirect('/registro/registro_profesor');
             // Envía el archivo HTML al cliente
             res.sendFile(filePath);
             }else if(estudiante){
-                 // Construye la ruta completa al archivo HTML dentro de la carpeta 'inicio_sesion'
-                const filePath = path.join(__dirname, '..', 'src','formulario', 'formulario_alumno.html');
-                // Envía el archivo HTML al cliente
-                res.sendFile(filePath);
+                res.redirect('/registro/registro_alumno');
             }    
         })
             .catch((err) => res.json(err));  // Devuelve un mensaje de error si la operación de guardado falla
