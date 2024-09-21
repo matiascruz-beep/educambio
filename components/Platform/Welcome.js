@@ -17,24 +17,28 @@ export default function Welcome() {
 
     return (
         <div className="grid-flow-col grid-cols-2">
-            <div className="bg-[#0063C7] bg-opacity-50 rounded-[80px] w-[6in] ml-[7in] mt-6 h-[2in] text-center">
-                <h1 className="font-bold">¡Hola! Bienvenido</h1>
-                <p className="font-semibold">
-                    En este apartado, podrás ver las clases en las que te encuentras inscripto.
-                </p>
-                <img src="/images/robotito.png" className="flex w-20 ml-20" />
+            <div className="bg-[#0063C7] bg-opacity-50 rounded-[80px] w-[6in] ml-[7in] mt-6 h-[2in] text-left flex justify-between items-center p-4">
+                <div className="text-left">
+                    <h1 className="font-bold">¡Hola! Bienvenido</h1>
+                     <p className="font-semibold text-justify">
+                        En este apartado, podrás ver las clases en las que te encuentras inscripto.
+                     </p>
+                </div>
+            <div>
+                    <img src="/images/robotito.png" className="w-20" />
             </div>
+        </div>
 
             <div className="rounded-[80px] w-[15in] ml-[3in] mt-20 h-[5in]">
                 <table className="mt-16 w-full text-white border-separate border-spacing-y-4" id="clasesTabla">
                     <thead className="bg-[#0063C7]">
                         <tr>
-                            <th className="text-center px-2.5 h-[95px] uppercase">Materia</th>
+                            <th className="rounded-tl-[40px] text-center px-2.5 h-[95px] uppercase">Materia</th>
                             <th className="text-center px-2.5 h-[95px] uppercase">Contenido</th>
                             <th className="text-center px-2.5 h-[95px] uppercase">Fecha</th>
                             <th className="text-center px-2.5 h-[95px] uppercase">Horario</th>
                             <th className="text-center px-2.5 h-[95px] uppercase">Duración</th>
-                            <th className="text-center px-2.5 h-[95px] uppercase">Acciones</th>
+                            <th className="rounded-tr-[40px] text-center px-2.5 h-[95px] uppercase">Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
