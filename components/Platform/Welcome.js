@@ -17,17 +17,22 @@ export default function Welcome() {
 
     return (
         <div className="grid-flow-col grid-cols-2">
-            <div className="bg-[#0063C7] bg-opacity-50 rounded-[80px] w-[6in] ml-[7in] mt-6 h-[2in] text-left flex justify-between items-center p-4">
-                <div className="text-left">
-                    <h1 className="font-bold">¡Hola! Bienvenido</h1>
-                     <p className="font-semibold text-justify">
-                        En este apartado, podrás ver las clases en las que te encuentras inscripto.
-                     </p>
+
+            <div className="bg-[#0063C7] bg-opacity-50 mx-auto msj-bienvenida w-[90%] max-w-[900px] h-auto bg-custom-bg rounded-[30px] my-12 flex flex-col md:flex-row text-center  items-center justify-center shadow-[10px_10px_20px_rgba(0,0,0,0.5)] py-14">
+                <div className="flex flex-col items-center justify-center">
+                    <h1 className="text-white text-2xl md:text-3xl font-bold mb-2">¡Hola! Bienvenido</h1>
+                    <p className="text-white text-sm md:text-base leading-5 font-poppins">
+                    En este apartado, podrás ver las clases en las que te encuentras inscripto.
+                    </p>
                 </div>
-            <div>
-                    <img src="/images/robotito.png" className="w-20" />
-            </div>
-        </div>
+                <div className="robotito mb-4 md:mb-0 md:mr-4 flex justify-center md:justify-start">
+                    <img 
+                    src="/images/robotito.png" 
+                    alt="Robotito" 
+                    className="w-[65px] h-[65px] md:w-[90px] md:h-[90px] object-contain"
+                    />
+                </div>
+                </div>
 
             <div className="rounded-[80px] w-[15in] ml-[3in] mt-20 h-[5in]">
                 <table className="mt-16 w-full text-white border-separate border-spacing-y-4" id="clasesTabla">
