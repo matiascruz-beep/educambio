@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Profile from "@/components/Platform/Profile"
 import { FaHome, FaFileSignature, FaCalendarAlt, FaRegUserCircle } from "react-icons/fa";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
@@ -17,7 +18,7 @@ export default function Navegation ({user, name, title, link1, link2, link3, lin
                                  <div className="mr-2" id="userIcon">
                                         <FaRegUserCircle className="w-8 h-8 ml-1"/>      
                                       <div id="userMenu" className="bg-white rounded-2xl p-4 text-clip opacity-0 absolute top-full right-0 mt-2 w-36 z-10 hidden">
-                                           <Link className="text-black w-full hover:bg-gray-200" href="/components/Platform/Perfil.js">Perfil</Link>
+                                           <Link className="text-black w-full hover:bg-gray-200" href="/plataforma_profesor/perfil_profesor">Perfil</Link>
                                             <p className="text-black">Cerrar sesión</p>
                                      </div>
                                                         
@@ -74,6 +75,7 @@ export default function Navegation ({user, name, title, link1, link2, link3, lin
     
                 </div> 
             </div>    
+            <Profile />
         </div>
         
     )

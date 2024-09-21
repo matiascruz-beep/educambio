@@ -5,7 +5,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css"; 
 import "swiper/css/navigation"; 
 import "swiper/css/pagination"; 
-import Card from "./card"; 
+import Card from "@/pages/plataforma_alumno/card"; 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const MySwiper = () => {
   const cardsData = [

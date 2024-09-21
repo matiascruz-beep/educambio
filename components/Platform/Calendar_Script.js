@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react';
 
 const Calendario = () => {
     const calendarioRef = useRef(null);
@@ -9,13 +9,13 @@ const Calendario = () => {
 
         let currentMonth = new Date().getMonth();
         let currentYear = new Date().getFullYear();
-        const today = new Date(); // fecha actual
+        const today = new Date();
 
-        // Objeto para almacenar los eventos
+  
         let events = {};
 
         function renderCalendar(month, year) {
-            const firstDay = new Date(year, month, 1).getDay(); // Obtener el día de la semana del primer día del mes
+            const firstDay = new Date(year, month, 1).getDay();
             const daysInMonth = new Date(year, month + 1, 0).getDate();
 
             const calendarDays = document.getElementById('calendarDays');
@@ -23,8 +23,8 @@ const Calendario = () => {
 
             document.getElementById('currentMonth').innerText = `${months[month]} ${year}`;
 
-            // Alinear el primer día del mes correctamente
-            let emptyCells = (firstDay === 0 ? 6 : firstDay - 1); // Si es domingo (0), alinear como el último día de la semana
+           
+            let emptyCells = (firstDay === 0 ? 6 : firstDay - 1); 
             for (let i = 0; i < emptyCells; i++) {
                 const emptyCell = document.createElement('div');
                 calendarDays.appendChild(emptyCell);
@@ -34,14 +34,14 @@ const Calendario = () => {
                 const day = document.createElement('div');
                 day.className = 'py-3 relative';
 
-                // Día actual
+               
                 if (i === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
                     day.classList.add('bg-blue-600', 'text-white', 'rounded-full');
                 }
 
                 day.innerText = i;
 
-                // Formato de la fecha actual para verificar eventos
+               
                 const date = `${year}-${String(month + 1).padStart(2, '0')}-${String(i).padStart(2, '0')}`;
                 
                 if (events[date]) {

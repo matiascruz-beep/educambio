@@ -1,4 +1,4 @@
-import Card from "@/components/Home/Card"
+import Cardindex from "@/components/Home/Cardindex"
 import Integrantes from "@/components/Home/Integrantes"
 import Footer from "@/components/Home/Footer"
 
@@ -125,9 +125,9 @@ export default function Home() {
 
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 md:gap-10">
 
-        <Card title="Clases Sincronicas" cardimage="/images/card1.png" description="Retroalimentacion inmediata durante las clases para aclarar dudas o corregir errores, aprovechando las funciones de chat en vivo."/>
-        <Card title="Videos Educativos" cardimage="/images/card2.png" description="Conceptos clave de tus materias utilizando ejemplos y graficos visuales para facilitar la comprensión"/> 
-        <Card title="Material Didáctico" cardimage="/images/card3.png" description="Actividades practicas, material de lectura, infografias para que puedan profundizar en los temas y desarrollar habilidades de comprension lectora"/>
+        <Cardindex title="Clases Sincronicas" cardImage="/images/card1.png" description="Retroalimentacion inmediata durante las clases para aclarar dudas o corregir errores, aprovechando las funciones de chat en vivo."/>
+        <Cardindex title="Videos Educativos" cardImage="/images/card2.png" description="Conceptos clave de tus materias utilizando ejemplos y graficos visuales para facilitar la comprensión"/> 
+        <Cardindex title="Material Didáctico" cardImage="/images/card3.png" description="Actividades practicas, material de lectura, infografias para que puedan profundizar en los temas y desarrollar habilidades de comprension lectora"/>
        
       </div>
 

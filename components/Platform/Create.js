@@ -1,71 +1,74 @@
-import React from 'react'
+import React from 'react';
 
-export default function Create ({}) {
-    return ( 
+export default function Create() {
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-        <div>
+        const clase = {
+            materia: document.getElementById('materia').value,
+            contenido: document.getElementById('contenido').value,
+            fecha: document.getElementById('fecha').value,
+            horario: document.getElementById('horario').value,
+            duracion: document.getElementById('duracion').value,
+            meet: document.getElementById('meet').value
+        };
 
-        <div className="flex align-middle justify-center font-poppins">
-            <p className="text-[2.9rem] text-white mt-16">
-                Crear clase
-            </p>
-        </div>
+ 
+        const clases = JSON.parse(localStorage.getItem('clases')) || [];
+        
+
+        clases.push(clase);
+        
+
+        localStorage.setItem('clases', JSON.stringify(clases));
 
 
+        document.getElementById('crearClaseForm').reset();
+    };
+
+    return (
+        <div className="align-middle justify-center font-poppins grid">
+            <p className="text-[2.9rem] text-white mt-16 ml-60">Crear clase</p>
             <div className="mx-auto msj-bienvenida w-[8in] h-[6in] rounded-[30px] mt-[4.15rem] flex text-center items-center justify-center shadow-[10px_10px_20px_rgba(0,0,0,0.5)]">
-                
-      
-
-                        <div className="grid grid-cols-1 align-middle">
-                           
-
-                          <form id=""/>
-                              <div className="">
-                                  <div className="mr-10">
-                                      <div className="flex flex-col mt-4">
-                                          <label className="text-white" for="materia">Materia:</label>
-                                          <input className="text-black w-[400px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="materia" name="materia" placeholder="ej: matemática" required/>
-                                      </div>
-                                      <div className="flex flex-col mt-4">
-                                          <label className="text-white" for="contenido">Contenido:</label>
-                                          <input placeholder="ej: Función cuadrática" className="text-black w-[400px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="contenido" name="contenido" required/>
-                                      </div>
-                                      <div className="flex flex-col mt-4">
-                                          <label className="text-white" for="fecha">Fecha:</label>
-                                          <input placeholder="dd/mm/aa" className="text-black w-[400px] h-[40px] rounded-[40px] pl-4 pr-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="date" id="fecha" name="fecha" required/>
-                                      </div>
-                                  </div>
-                                  <div>
-                                      <div className="flex flex-col mt-4">
-                                          <label className="text-white" for="horario">Horario:</label>
-                                          <input className="text-black w-[400px] h-[40px] rounded-[40px] pl-5 pr-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="time" id="horario" name="horario" required/>
-                                      </div>
-                                      <div className="flex flex-col mt-4">
-                                          <label className="text-white" for="duracion">Duración:</label>
-                                          <select className="text-black w-[400px] h-[40px] rounded-[40px] pl-4 pr-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="duracion" name="duracion" required>
-                                              <option value="">Seleccione la duración </option>
-                                              <option value="1 hora">1 hora</option>
-                                              <option value="1.5 horas">1.5 horas</option>
-                                              <option value="2 horas">2 horas</option>
-                                              <option value="2.5 horas">2.5 horas</option>
-                                              <option value="3 horas">3 horas</option>
-                                              <option value="3.5 horas">3.5 horas</option>
-                                              <option value="4 horas">4 horas</option>
-                                              <option value="4.5 horas">4.5 horas</option>
-                                              <option value="5 horas">5 horas</option>
-                                          </select>
-                                      </div>
-                                      <div className="flex flex-col mt-4">
-                                      <label className="text-white" for="meet">Meet:</label>
-                                      <input  placeholder="ej: https://meet.google.com/abc-def-fgh" className="text-black w-[400px] h-[40px] rounded-[40px] pl-4 border-2 border-transparent focus:border-custom-blue2 focus:outline-none" type="text" id="meet" name="meet" required/>
-                                      </div>  
-                                  </div> 
-                              </div>
-                              <div className="w-[200px] h-[40px] rounded-3xl bg-[#0082D6] ml-28 mt-6">
-                                  <button className="text-white w-[200px] h-[40px]" type="submit" id="crear">Crear Clase</button>
-                              </div> 
+                <div className="grid grid-cols-1 align-middle">
+                    <form id="crearClaseForm" onSubmit={handleSubmit}>
+                        <div>
+                            {}
+                            <div className="flex flex-col mt-4">
+                                <label className="text-white" htmlFor="materia">Materia:</label>
+                                <input className="text-black w-[400px] h-[40px]" type="text" id="materia" placeholder="ej: matemática" required />
+                            </div>
+                            <div className="flex flex-col mt-4">
+                                <label className="text-white" htmlFor="contenido">Contenido:</label>
+                                <input className="text-black w-[400px] h-[40px]" type="text" id="contenido" placeholder="ej: Función cuadrática" required />
+                            </div>
+                            <div className="flex flex-col mt-4">
+                                <label className="text-white" htmlFor="fecha">Fecha:</label>
+                                <input className="text-black w-[400px] h-[40px]" type="date" id="fecha" required />
+                            </div>
+                            <div className="flex flex-col mt-4">
+                                <label className="text-white" htmlFor="horario">Horario:</label>
+                                <input className="text-black w-[400px] h-[40px]" type="time" id="horario" required />
+                            </div>
+                            <div className="flex flex-col mt-4">
+                                <label className="text-white" htmlFor="duracion">Duración:</label>
+                                <select className="text-black w-[400px] h-[40px]" id="duracion" required>
+                                    <option value="">Seleccione la duración</option>
+                                    <option value="1 hora">1 hora</option>
+                                    <option value="2 horas">2 horas</option>
+                                </select>
+                            </div>
+                            <div className="flex flex-col mt-4">
+                                <label className="text-white" htmlFor="meet">Meet:</label>
+                                <input className="text-black w-[400px] h-[40px]" type="text" id="meet" placeholder="https://meet.google.com/abc-def-fgh" required />
+                            </div>
+                        </div>
+                        <div className="w-[200px] h-[40px] rounded-3xl bg-[#0082D6] ml-28 mt-6">
+                            <button className="text-white w-[200px] h-[40px]" type="submit">Crear Clase</button>
+                        </div>
+                    </form>
                 </div>
-                </div>
-         </div>
-    )
+            </div>
+        </div>
+    );
 }
