@@ -2,9 +2,10 @@ import React from 'react'
 
 export default function Footer ({}) {
     return (
-        <div className="bg-black text-white" id="contacto">
+        <div className="bg-black text-white flex justify-center" id="contacto">
 
-        <div className="mx-[25rem] grid grid-cols-3 grid-flow-col gap-5">
+        <div>
+        <div className="max-w-screen-2xl flex flex-col md:grid md:grid-cols-3 gap-5">
             <div className="p-5">
                 <h2 className="mb-10 text-2xl tracking-[0.5rem]">EDUCAMBIO</h2>
                 <p className="mb-[6rem] font-light">Una educación secundaria sólida puede abrir puertas a futuras oportunidades.</p>
@@ -95,8 +96,9 @@ export default function Footer ({}) {
                 <a href="#">Privacy Policy</a>
                 <div className="h-4 w-px bg-slate-200"></div>
                 <a href="#">Terms and Conditions</a></div>
-            </div>
+        </div>
+        </div>
 
-    </div>
+        </div>
     )
 }

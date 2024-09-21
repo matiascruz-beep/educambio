@@ -229,17 +229,21 @@ export default function Home() {
       </div>
 
 
-      <div className="bg-[#5EAFF9]/10 size-full md:size-auto pb-10">
-        <div className="md:container mx-auto flex justify-between pb-5">
-          <div className="mt-5">
-            <p className="text-xl font-semibold">
+      <div className="bg-[#5EAFF9]/10 size-full md:size-auto py-10">
+        <div className="md:container mx-auto flex flex-col md:flex-row justify-between items-center pb-5">
+          <div className="mt-5 text-center md:text-left">
+            <p className="text-lg md:text-xl font-semibold">
               Aprende a tu ritmo con recursos multimedia, interactivos y profesores dedicados
             </p>
           </div>
-          <div className="p-3">
-            <button className="rounded-[43px] w-[160px] h-[55px] bg-[#0063C7] active:scale-75 transition duration-150 text-white uppercase font-bold">
+          <div className="mt-4 md:mt-0">
+            <ul>
+              <li className="rounded-[43px] w-[160px] h-[55px] bg-[#0063C7] text-white uppercase font-bold hover:bg-[#004A9F] text-center">
+              <a href="/registro/first_registro" className="flex items-center justify-center h-full px-2">
               Reserva una clase
-            </button>
+              </a>
+              </li>
+              </ul>
           </div>
         </div>
 
