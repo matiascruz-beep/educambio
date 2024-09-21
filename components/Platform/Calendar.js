@@ -1,5 +1,5 @@
 import React from "react";
-import Calendario from "./Calendar_Script";
+import Calendario from "../../components/Platform/Calendar_Script";
 
 
 export default function Calendar (){

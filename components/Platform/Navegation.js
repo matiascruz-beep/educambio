@@ -49,28 +49,28 @@ export default function Navegation ({user, name, title, link1, link2, link3, lin
                         <div>   
                         <FaHome className="text-white w-10 h-10 ml-[1.6rem] transition duration-150 delay-[45ms]" />
                         </div>
-                        <Link href={link1} className="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Inicio</Link>
+                        <Link href={link1 || "#"} className="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Inicio</Link>
                     </div>
     
                     <div className="flex pt-10">
                         <div>
                         <FaFileSignature className="text-white w-10 h-10 ml-[1.9rem] transition duration-150 delay-[45ms]" />
                         </div>
-                        <Link href={link2} className="text-white pl-4 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-75 delay-[45ms] whitespace-nowrap">Anotarse a clase</Link>
+                        <Link href={link2 || "#"} className="text-white pl-4 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-75 delay-[45ms] whitespace-nowrap">Anotarse a clase</Link>
                     </div>
     
                     <div className="flex pt-10">
                         <div>
                         <IoChatbubbleEllipsesOutline className="text-white w-10 h-10 ml-[1.6rem] transition duration-150 delay-[45ms]" />
                         </div>
-                        <Link href={link3} className="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Soporte</Link>
+                        <Link href={link3 || "#"} className="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Soporte</Link>
                     </div>
     
                     <div className="flex pt-10">
                         <div>
                         <FaCalendarAlt className="text-white w-10 h-10 ml-[1.6rem] transition duration-150 delay-[45ms]"/>
                         </div>
-                        <a href={link4} className="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Calendario</a>
+                        <Link href={link4 || "#"} className="text-white pl-5 pt-2 text-clip opacity-0 group-hover:opacity-100 transition duration-150 delay-[45ms]">Calendario</Link>
                     </div>
     
                 </div> 
