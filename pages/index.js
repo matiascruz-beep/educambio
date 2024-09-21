@@ -7,31 +7,132 @@ export default function Home() {
   return (
     <main >
 
-<div className="max-w-[2000px] mx-auto ">
-    <div className="p-5 flex justify-between items-center">
-        <div className="educambio"><a class="no-underline font-bold text-[31px] tracking-wider text-[#0063C7] transition duration-300 hover:text-[#004A9F]" href="#inicio">EDUCAMBIO</a></div>
-            <div className="lista">
-                <ul className="flex list-none gap-8"> 
-                    <li className="p-4 hover:text-gray-400"><a className="no-underline text-inherit text-lg font-normal leading-7" href="#inicio">Inicio</a> </li>
-                    <li className="p-4 hover:text-gray-400"> <a className="no-underline text-inherit text-lg font-normal leading-7" href="#sabiasque">¿Sabías que?</a> </li>
-                    <li className="p-4 hover:text-gray-400"> <a className="no-underline text-inherit text-lg font-normal leading-7" href="#nosotros">Nosotros</a> </li>
-                    <li className="p-4 hover:text-gray-400"> <a className="no-underline text-inherit text-lg font-normal leading-7" href="#contacto">Contacto</a> </li>
-                </ul>  
-            </div>
-            <div>
-                <ul className="flex">
-                  <li className="flex justify-center  items-center w-[150px] h-[50px] text-center bg-[#0063C7] text-white rounded-[43px] shadow-lg transition duration-300 hover:translate-y-0.5 hover:shadow-2xl mr-2">
-                    <a className="w-full h-full flex justify-center items-center" href="/registro/inicio_sesion">Iniciar sesión</a>
-                  </li>
-                  <li className="flex justify-center items-center w-[150px] h-[50px] text-center bg-[#56AEFF] text-white rounded-[43px] shadow-lg transition duration-300 hover:translate-y-0.5 hover:shadow-2xl ml-2">
-                    <a className="w-full h-full flex justify-center items-center" href="/registro/first_registro">Registrate</a>
-                  </li>
-                </ul>
-              </div>
-              
-    </div>
-   
-</div>
+      <div className="max-w-[2000px] mx-auto">
+        <div className="p-5 flex justify-between items-center">
+          <div className="educambio">
+            <a
+              className="no-underline font-bold text-[24px] md:text-[31px] tracking-wider text-[#0063C7] transition duration-300 hover:text-[#004A9F]"
+              href="#inicio"
+            >
+              EDUCAMBIO
+            </a>
+          </div>
+
+          <div className="hidden md:flex">
+            <ul className="flex list-none gap-4 md:gap-8">
+              <li className="p-2 md:p-4 hover:text-gray-400">
+                <a
+                  className="no-underline text-inherit text-sm md:text-lg font-normal leading-7"
+                  href="#inicio"
+                >
+                  Inicio
+                </a>
+              </li>
+              <li className="p-2 md:p-4 hover:text-gray-400">
+                <a
+                  className="no-underline text-inherit text-sm md:text-lg font-normal leading-7"
+                  href="#sabiasque"
+                >
+                  ¿Sabías que?
+                </a>
+              </li>
+              <li className="p-2 md:p-4 hover:text-gray-400">
+                <a
+                  className="no-underline text-inherit text-sm md:text-lg font-normal leading-7"
+                  href="#nosotros"
+                >
+                  Nosotros
+                </a>
+              </li>
+              <li className="p-2 md:p-4 hover:text-gray-400">
+                <a
+                  className="no-underline text-inherit text-sm md:text-lg font-normal leading-7"
+                  href="#contacto"
+                >
+                  Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="hidden md:flex">
+            <ul className="flex">
+              <li className="flex justify-center items-center w-[120px] md:w-[150px] h-[40px] md:h-[50px] text-center bg-[#0063C7] text-white rounded-[43px] shadow-lg transition duration-300 hover:translate-y-0.5 hover:shadow-2xl mr-2">
+                <a
+                  className="w-full h-full flex justify-center items-center"
+                  href="/registro/inicio_sesion"
+                >
+                  Iniciar sesión
+                </a>
+              </li>
+              <li className="flex justify-center items-center w-[120px] md:w-[150px] h-[40px] md:h-[50px] text-center bg-[#56AEFF] text-white rounded-[43px] shadow-lg transition duration-300 hover:translate-y-0.5 hover:shadow-2xl ml-2">
+                <a
+                  className="w-full h-full flex justify-center items-center"
+                  href="/registro/first_registro"
+                >
+                  Registrate
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="md:hidden">
+            <button
+              onClick={() => {
+                const menu = document.getElementById('mobile-menu');
+                menu.classList.toggle('hidden');
+              }}
+              className="text-[#0063C7]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="mobile-menu" className="hidden md:hidden">
+          <ul className="flex flex-col items-center bg-gray-100 p-4">
+            <li className="p-4 hover:text-gray-400">
+              <a href="#inicio" className="no-underline text-inherit text-lg font-normal">
+                Inicio
+              </a>
+            </li>
+            <li className="p-4 hover:text-gray-400">
+              <a href="#sabiasque" className="no-underline text-inherit text-lg font-normal">
+                ¿Sabías que?
+              </a>
+            </li>
+            <li className="p-4 hover:text-gray-400">
+              <a href="#nosotros" className="no-underline text-inherit text-lg font-normal">
+                Nosotros
+              </a>
+            </li>
+            <li className="p-4 hover:text-gray-400">
+              <a href="#contacto" className="no-underline text-inherit text-lg font-normal">
+                Contacto
+              </a>
+            </li>
+            <li className="m-4 p-4 bg-[#0063C7] text-white rounded-lg shadow-lg hover:bg-[#004A9F]">
+              <a href="/registro/inicio_sesion" className="w-full text-center block">
+                Iniciar sesión
+              </a>
+            </li>
+            <li className="m-4 p-4 bg-[#56AEFF] text-white rounded-lg shadow-lg hover:bg-[#359aff]">
+              <a href="/registro/first_registro" className="w-full text-center block">
+                Registrate
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
 <div className="bg-[url('/images/FONDO.png')] bg-cover bg-no-repeat flex items-center h-screen " id="inicio">
     <div className="flex flex-col mx-20 pb-20">
