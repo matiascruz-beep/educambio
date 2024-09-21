@@ -134,22 +134,35 @@ export default function Home() {
         </div>
       </div>
 
-<div className="bg-[url('/images/FONDO.png')] bg-cover bg-no-repeat flex items-center h-screen " id="inicio">
-    <div className="flex flex-col mx-20 pb-20">
-      <h3 className="text-4xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-white">
-        APRENDE, CRECE, Y ALCANZA <br/> TUS METAS CON 
-      </h3>
-      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0082D6] py-6">
-        EDUCAMBIO
-      </h1>
-      <h5 className="text-4xl sm:text-l md:text-l lg:text-xl text-white">
-        CLASES DE APOYO GRATUITAS PARA<br/>ESTUDIANTES DE SECUNDARIA
-      </h5>
-    </div>
-</div>
+
+      <div className="flex items-center justify-center h-screen bg-[url('/images/FONDO.png')] bg-cover bg-no-repeat" id="inicio">
+        <div className="bg-gradient-to-r from-[#5DAEF9] via-transparent to-transparent h-screen w-screen flex items-center justify-center">
+          <div className="flex items-center max-w-screen-2xl w-full h-full sm:mx-10 pb-10 sm:pb-16 md:pb-20 px-4 sm:px-6 md:px-8 lg:px-10">
+            <div className="flex flex-col w-full text-left justify-center">
+              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+                APRENDE, CRECE, Y ALCANZA <br className="hidden sm:block" /> TUS METAS CON
+              </h3>
+
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#0082D6] py-4 sm:py-5 lg:py-6">
+                EDUCAMBIO
+              </h1>
+
+              <h5 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white">
+                CLASES DE APOYO GRATUITAS PARA<br className="hidden sm:block" /> ESTUDIANTES DE SECUNDARIA
+              </h5>
+            </div>
+
+            <img
+              src="/images/robotito.png"
+              alt="Robot hipervinculo"
+              className="fixed bottom-0 right-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 mb-4 mr-4"
+            />
+          </div>
+        </div>
+      </div>
 
 
-<div className="bg-[url('/images/fondoSQ.png')] bg-cover bg-no-repeat flex justify-center h-screen" id="sabiasque">
+<div className="bg-[url('/images/fondoSQ.png')] bg-cover bg-no-repeat flex justify-center items-center h-screen" id="sabiasque">
     <div className="p-6 sm:p-12 max-w-screen-2xl">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0082D6]">
             ¿Sabías qué?
@@ -169,8 +182,14 @@ export default function Home() {
             <p className="text-white text-lg sm:text-2xl">
                 Si eres profesor recibido o en formación y <span className="font-bold">te gustaría unirte</span> a nuestra causa, <span className="font-bold">¡te invitamos a hacerlo!</span> Juntos, podemos hacer una diferencia significativa en la educación de nuestros jóvenes.
             </p>
-            <div className="pt-5">
-                <button className="rounded-[43px] w-[160px] h-[55px] bg-[#0063C7] text-white uppercase font-bold" href="/registro/registro_profesor">Registrate</button>
+            <div className="py-6">
+              <ul>
+                <li className="rounded-[43px] w-[160px] h-[55px] bg-[#0063C7] text-white uppercase font-bold hover:bg-[#004A9F] text-center">
+                  <a href="/registro/first_registro" className="flex items-center justify-center h-full">
+                    Registrate
+                  </a>
+                </li>
+              </ul>
             </div>
         </div>
     </div>
