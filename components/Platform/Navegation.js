@@ -5,9 +5,6 @@ import { FaHome, FaFileSignature, FaCalendarAlt, FaRegUserCircle } from "react-i
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
 
-
-
-
 export default function Navegation ({user, name, title, link1, link2, link3, link4}) {
     return (
         <div>

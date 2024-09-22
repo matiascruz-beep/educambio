@@ -5,7 +5,8 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css"; 
 import "swiper/css/navigation"; 
 import "swiper/css/pagination"; 
-import Card from "@/pages/plataforma_alumno/card"; 
+import Card from "@/pages/plataforma_alumno/card";
+import Navegation from "@/components/Platform/Navegation"
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const MySwiper = () => {
   const cardsData = [
@@ -76,15 +77,24 @@ const MySwiper = () => {
   ];
 
   return (
+
+    <div className="relative bg-cover bg-gradient-to-r from-[#003366] to-[#56AEFF]">
+
+      <Navegation user="Ramiro" name="Juan Rodriguez" title="Alumno 6to E.S.B" link1="/plataforma_alumno/panel_de_alumno" link2="/plataforma_alumno/clases_alumno" link3="/plataforma_alumno/soporte_alumno" link4="/plataforma_alumno/calendario"/>
+
+    
+
+    <div className="flex justify-center items-center h-screen pt-1">
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={80}
-      slidesPerView={4}
+      spaceBetween={20}
+      slidesPerView={3}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
+      className="w-full max-w-6xl"
     >
       {cardsData.map((card, index) => (
         <SwiperSlide key={index}>
@@ -92,6 +102,8 @@ const MySwiper = () => {
         </SwiperSlide>
       ))}
     </Swiper>
+      </div>
+    </div>
   );
 };
 

@@ -10,9 +10,9 @@ const Card = ({
   availableSlots,
 }) => {
   return (
-    <div className="swiper-slide p-4">
+    <div className="swiper-slide p-10">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <p className="text-blue-500 text-center py-2 text-xl font-poppins">
+        <p className="text-blue-500 text-center py-2 text-xl">
           {subject}
         </p>
         <img
@@ -20,7 +20,7 @@ const Card = ({
           src={imageSrc}
           alt="imagen de la tarjeta"
         />
-        <div className="p-4">
+        <div className="p-4 text-center">
           <h2 className="text-xl mb-2 font-bold">{teacher}</h2>
           <p className="text-gray-700 mb-1">Fecha de inicio: {startDate}</p>
           <p className="text-gray-700 mb-1">Horario: {schedule}</p>
