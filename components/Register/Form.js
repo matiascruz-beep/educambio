@@ -1,14 +1,8 @@
 import React from 'react'
 
 export default function Form ({sect1, sect2, sect3, sect4, sect5, sect6}) {
-    return (
-<div>
-
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
-        
-        
-        
-        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+    return (<form action="#"method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <div className="grid grid-cols-1 gap-x-8  gap-y-6 sm:grid-cols-2">
           <div>
             <label for="first-name" className="block text-sm font-semibold leading-6 text-white">{sect1}</label>
             <div className="mt-2.5">
