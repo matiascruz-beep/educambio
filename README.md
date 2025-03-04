@@ -6,8 +6,6 @@
 ## 🔧 Tecnologías que uso:
 - JavaScript | React | Node.js
 - HTML | CSS | Tailwind
-- Python | C#
-
 ## 📊 GitHub Stats
 ![Matías's GitHub stats](https://github-readme-stats.vercel.app/api?username=TU_USUARIO&show_icons=true&theme=radical)
 
