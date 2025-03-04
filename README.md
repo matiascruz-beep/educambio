@@ -12,5 +12,5 @@
 ![Matías's GitHub stats](https://github-readme-stats.vercel.app/api?username=TU_USUARIO&show_icons=true&theme=radical)
 
 ## 📫 Contacto
-- Email: matias@email.com
-- LinkedIn: [Tu LinkedIn](https://linkedin.com/in/usuario)
+- Email: matiasprofe2021@gmail.com
+- LinkedIn: https://www.linkedin.com/in/matias-cruz-b9a700234/
