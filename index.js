@@ -50,7 +50,7 @@ app.prepare().then(() => {
     });
 
     app2.listen(PORT, () => {
-        console.log(`Servidor en el puerto ${PORT}`);
+        console.log(`Servidor corriendo en http://localhost:${PORT}`);
     });
    // Inicializacion del Servidor
 //app2.listen(PORT, HOST, console.log(msg))

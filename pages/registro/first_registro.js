@@ -4,7 +4,7 @@ import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram } from "react-icons/fa";
 
 export default function() {
     return (
-        <main className="h-screem">
+        <main className="h-screen">
             <div>
                 <Nav_registro/>
             </div>
