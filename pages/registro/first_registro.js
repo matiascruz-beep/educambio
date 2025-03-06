@@ -39,7 +39,7 @@ export default function() {
                                 name="username" 
                                 id="username"  
                                 placeholder="usuario" 
-                                class="rounded-lg pl-2 py-1" 
+                                className="rounded-lg pl-2 py-1" 
                                 autocomplete="true"/>
                             <input
                             type="email"
@@ -78,6 +78,7 @@ export default function() {
                                     <input
                                     type="checkbox"
                                     id="profesor"
+                                    value="profesor"
                                     name="rol"
                                     className="p-4"
                                     onChange={(e) => {
@@ -95,6 +96,7 @@ export default function() {
                                     <input
                                     type="checkbox"
                                     id="estudiante"
+                                    value="estudiante"
                                     name="rol"
                                     className="p-4"
                                     onChange={(e) => {

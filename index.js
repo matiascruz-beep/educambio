@@ -31,6 +31,12 @@ app2.use(express.urlencoded({extended: false}))
 // Conexion Base de Datos
 dbConn()
 
+// Configurar el motor de plantillas Handlebars
+app2.engine('handlebars', engine());
+app2.set('view engine', 'handlebars');
+app2.set('views', path.join(__dirname, 'views'));
+
+
 // Procesamiento de Rutas
 app2.use("/", auth);
 app2.use("/destinations", dest);
