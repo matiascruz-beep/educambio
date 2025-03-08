@@ -11,9 +11,7 @@ export const getDest = (req, res) =>
 
 // Maneja la actualización de un destino específico por ID
 export const updateDest = ({ body, params: { id: _id } }, res) =>
-    resolve(res, Destination.updateOne({ _id }, { $set: body }));  // Llama a la función 'resolve' con el resultado de la actualización del destino
-
-// Maneja la eliminación de un destino específico por ID
+    resolve(res, Destination.updateOne({ _id }, { $set: body }));  // Llama a la función 'resolve' con el resultado de la actualización del destino// Maneja la eliminación de un destino específico por ID
 export const deleteDest = ({ params: { id: _id } }, res) =>
     resolve(res, Destination.updateOne({ _id }));  // Llama a la función 'resolve' con el resultado de la actualización del destino para marcarlo como eliminado
 
