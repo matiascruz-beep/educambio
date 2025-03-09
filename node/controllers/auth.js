@@ -72,7 +72,8 @@ export const getLogin = async (req, res) => {
         res.header({
             Authorization: "Bearer " + token
         });
-       // Redirige a la ruta '/login-success'
+        
+           // Redirige a la ruta '/login-success'
         res.redirect('/plataforma_profesor/panel_de_profesor');
         //res.render("layouts/home", {usuario : username}) tiene que hacer esto
     } catch (error) {
@@ -86,28 +87,49 @@ export const getLogin = async (req, res) => {
     }
 };
 
-
-// Maneja el registro de nuevos usuarios
+// Maneja el registro de usuarios
 export const getSignIn = async (req, res) => {
-    const { username, email, password,rol } = req.body;  // Obtiene el nombre de usuario, email y contraseña del cuerpo de la solicitud
+    const { username, email, password, rol } = req.body;  // Obtiene el nombre de usuario, email y contraseña del cuerpo de la solicitud
     const [p0, p1] = password;  // Se espera que 'password' sea un array con dos elementos
 
     if (p0 === p1) {  // Verifica que las contraseñas coincidan
-        const hash = await bcrypt.hash(p0, 10);  // Encripta la contraseña con bcrypt
-        const user = new UserDao({ username, email, password: hash });  // Crea un nuevo objeto UserDao con los datos del nuevo usuario
-        const newUser = new User(user);  // Crea un nuevo objeto User para interactuar con la base de datos
-        await newUser.save()  // Guarda el nuevo usuario en la base de datos
-        .then(() => {
-            if(rol === 'profesor'){
-                 // Construye la ruta completa al archivo HTML dentro de la carpeta 'inicio_sesion'
-                    res.redirect('/registro/registro_profesor');
-            // Envía el archivo HTML al cliente
-            //res.sendFile(filePath); 
-            }else if(rol === 'estudiante'){
+        try {
+            const hash = await bcrypt.hash(p0, 10);  // Encripta la contraseña con bcrypt
+            const user = new UserDao({ username, email, password: hash });  // Crea un nuevo objeto UserDao con los datos del nuevo usuario
+            const newUser = new User(user);  // Crea un nuevo objeto User para interactuar con la base de datos
+            await newUser.save();  // Guarda el nuevo usuario en la base de datos
+
+            // Crear un token con el nombre de usuario
+            const payload = { id: newUser._id, username: newUser.username };
+            const authResult = await auth(payload); // Generar el token
+
+            if (authResult.error) {
+                return res.json(authResult);
+            }
+
+            const token = authResult.token;
+
+            // Enviar la respuesta con el token y el username
+            res.json({
+                token,
+                username: newUser.username,
+                message: "Registro exitoso"
+            });
+
+            // Redirigir según el rol
+            if (rol === 'profesor') {
+                res.redirect('/registro/registro_profesor');
+            } else if (rol === 'estudiante') {
                 res.redirect('/registro/registro_alumno');
-            }    
-        })
-            .catch((err) => res.json(err));  // Devuelve un mensaje de error si la operación de guardado falla
+            } else {
+                res.render("layouts/signin", {
+                    error: true,
+                    message: "Por favor, selecciona una opción antes de continuar."
+                });
+            }
+        } catch (err) {
+            res.json(err);  // Devuelve un mensaje de error si la operación de guardado falla
+        }
     } else {
         res.render("layouts/signin", {
             error: true,
