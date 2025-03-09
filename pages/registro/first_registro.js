@@ -1,8 +1,39 @@
 import Footer_registro from "@/components/Register/Footer_registro";
 import Nav_registro from "@/components/Register/Nav_registro";
 import { FaFacebook, FaLinkedin, FaYoutube, FaInstagram } from "react-icons/fa";
+import { useState } from 'react'  
+import { useRouter } from 'next/router'
 
 export default function() {
+    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const router = useRouter();
+    const [errorMessage, setErrorMessage] = useState('');
+    const [isRegistered, setIsRegistered] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try{
+            const response = await axios.post('/api/signup', {
+                username,
+                email,
+                password
+            });
+            if(response.data.token){
+                 // Guardar el token y el nombre de usuario en el localStorage
+                localStorage.setItem('token', response.data.token);
+                localStorage.setItem('username', response.data.username);
+                setIsRegistered(true);
+            }else{
+                setErrorMessage(response.data.message || 'Error en el registro');
+            }
+        } catch (error) {
+            console.error("Error durante el registro:", error);
+            setErrorMessage('Hubo un problema al registrarse');
+        }
+    };
     return (
         <main className="h-screen">
             <div>
@@ -20,31 +51,22 @@ export default function() {
 
                         <form 
                             className="flex flex-col space-y-4 w-full"
-                            /*onSubmit={(e) => {
-                                e.preventDefault();
-                            
-                                const isProfesor = document.getElementById('profesor').checked;
-                                const isEstudiante = document.getElementById('estudiante').checked;
-                            
-                                if (isProfesor) {
-                                    window.location.href = './registro_profesor';
-                                } else if (isEstudiante) {
-                                    window.location.href = './registro_alumno';
-                                } else {
-                                alert('Por favor, selecciona una opción antes de continuar.');
-                                }
-                            }}*/
                         method="post" action="/signin" id="signin">
                                 <input type="text" 
                                 name="username" 
                                 id="username"  
+                                value={username}
+                                onChange={(e) => setUsername(e.target.value)}
                                 placeholder="usuario" 
                                 className="rounded-lg pl-2 py-1" 
-                                autocomplete="true"/>
+                                autocomplete="true"
+                                onSubmit={handleSubmit}/>
                             <input
                             type="email"
                             name="email"
                             id="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             placeholder="email@domain.com"
                             required
                             className="rounded-lg pl-2 py-1"
@@ -53,6 +75,8 @@ export default function() {
                             type="password"
                             name="password"
                             id="pass1"
+                            value={password}        
+                            onChange={(e) => setPassword(e.target.value)}   
                             placeholder="contraseña"
                             required
                             className="rounded-lg pl-2 py-1"
