@@ -61,6 +61,7 @@ export const getLogin = async (req, res) => {
         const payload = { id: user._id, username: user.username }; // Asegúrate de que este es un objeto simple
 
         const authResult = await auth(payload); // Usa tu función auth para generar el token
+        
 
         if (authResult.error) {
             return res.json(authResult);
@@ -73,7 +74,8 @@ export const getLogin = async (req, res) => {
             Authorization: "Bearer " + token
         });
         
-           // Redirige a la ruta '/login-success'
+        // Redirige a la ruta '/login-success'
+        res.cookie("username", user.username, { httpOnly: false }); // Cookie accesible en el frontend
         res.redirect('/plataforma_profesor/panel_de_profesor');
         //res.render("layouts/home", {usuario : username}) tiene que hacer esto
     } catch (error) {
@@ -108,14 +110,7 @@ export const getSignIn = async (req, res) => {
             }
 
             const token = authResult.token;
-
-            // Enviar la respuesta con el token y el username
-            res.json({
-                token,
-                username: newUser.username,
-                message: "Registro exitoso"
-            });
-
+            res.cookie("username", user.username, { httpOnly: false }); // Cookie accesible en el frontend
             // Redirigir según el rol
             if (rol === 'profesor') {
                 res.redirect('/registro/registro_profesor');
