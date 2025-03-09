@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function Welcome() {
+export default function Welcome({name}) {
     const [clases, setClases] = useState([]);
 
     useEffect(() => {
@@ -20,7 +20,7 @@ export default function Welcome() {
 
             <div className="bg-[#0063C7] bg-opacity-50 mx-auto msj-bienvenida w-[90%] max-w-[900px] h-auto bg-custom-bg rounded-[30px] my-12 flex flex-col md:flex-row text-center  items-center justify-center shadow-[10px_10px_20px_rgba(0,0,0,0.5)] py-14">
                 <div className="flex flex-col items-center justify-center">
-                    <h1 className="text-white text-2xl md:text-3xl font-bold mb-2">¡Hola! Bienvenido</h1>
+                    <h1 className="text-white text-2xl md:text-3xl font-bold mb-2">¡Hola! Bienvenidx {name}</h1>
                     <p className="text-white text-sm md:text-base leading-5 font-poppins">
                     En este apartado, podrás ver las clases en las que te encuentras inscripto.
                     </p>
